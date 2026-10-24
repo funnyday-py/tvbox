@@ -1,0 +1,22 @@
+__pycache__/
+*.pyc
+.workbuddy/
+nul
+
+# 巡检/探测临时产物
+scan_status.json
+deploy/_*.txt
+deploy/_*.json
+
+# 监察台（本地工具，不入仓库）
+monitor_server.py
+templates/
+test_*.py
+mock_tvbox.py
+merge_repo.mjs
+tvbox_mock.json
+tvbox-config-generator.html
+tvbox-debug-console.html
+_clean_kw.py
+prune_dead.py
+app.py
