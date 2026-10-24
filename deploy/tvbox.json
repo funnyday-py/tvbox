@@ -1,13 +1,10 @@
 {
  "sites": [
   {
-   "key": "LinagZi",
-   "name": "量子资源",
+   "key": "建安采集",
+   "name": "影视 • 建安",
    "type": 1,
-   "api": "https://cj.lziapi.com/api.php/provide/vod/?ac=list",
-   "searchable": 1,
-   "quickSearch": 1,
-   "filterable": 1
+   "api": "http://154.219.117.232:9981/jacloudapi.php/provide/vod"
   },
   {
    "key": "MaoTai",
@@ -19,6 +16,12 @@
    "filterable": 1
   },
   {
+   "key": "TV-茅台资源",
+   "name": "茅台采集",
+   "type": 1,
+   "api": "https://caiji.maotaizy.cc/api.php/provide/vod/"
+  },
+  {
    "key": "FeiFAN",
    "name": "非凡",
    "type": 1,
@@ -28,46 +31,28 @@
    "filterable": 1
   },
   {
-   "key": "MD",
-   "name": "魔都",
+   "key": "非凡",
+   "name": "影视 • 非凡[直连]",
    "type": 1,
-   "api": "https://www.mdzyapi.com/api.php/provide/vod/?ac=list",
-   "searchable": 1,
-   "quickSearch": 1,
-   "filterable": 1
+   "api": "http://ffzy.tv/api.php/provide/vod/"
   },
   {
-   "key": "HongNiu",
-   "name": "红牛资源",
+   "key": "非凡资源",
+   "name": "非凡资源",
    "type": 1,
-   "api": "https://www.hongniuzy2.com/api.php/provide/vod/at/josn/",
-   "searchable": 1,
-   "quickSearch": 1,
-   "filterable": 1
+   "api": "http://cj.ffzyapi.com/api.php/provide/vod/"
   },
   {
-   "key": "GuangSU",
-   "name": "光速",
+   "key": "天涯采集",
+   "name": "影视 • 天涯",
    "type": 1,
-   "api": "https://api.guangsuapi.com/api.php/provide/vod/josn",
-   "searchable": 1,
-   "quickSearch": 1,
-   "filterable": 1
+   "api": "http://tyyszy.com/api.php/provide/vod"
   },
   {
-   "key": "jinYing",
-   "name": "金鹰",
+   "key": "LinagZi",
+   "name": "量子资源",
    "type": 1,
-   "api": "https://jyzyapi.com/provide/vod/from/jinyingyun/at/json",
-   "searchable": 1,
-   "quickSearch": 1,
-   "filterable": 1
-  },
-  {
-   "key": "KuaiChe",
-   "name": "快车资源",
-   "type": 1,
-   "api": "https://caiji.kuaichezy.org/api.php/provide/vod/?ac=list",
+   "api": "https://cj.lziapi.com/api.php/provide/vod/?ac=list",
    "searchable": 1,
    "quickSearch": 1,
    "filterable": 1
@@ -80,6 +65,60 @@
    "searchable": 1,
    "quickSearch": 1,
    "filterable": 1
+  },
+  {
+   "key": "电影天堂",
+   "name": "影视 • 电影天堂",
+   "type": 1,
+   "api": "http://caiji.dyttzyapi.com/api.php/provide/vod"
+  },
+  {
+   "key": "HongNiu",
+   "name": "红牛资源",
+   "type": 1,
+   "api": "https://www.hongniuzy2.com/api.php/provide/vod/at/josn/",
+   "searchable": 1,
+   "quickSearch": 1,
+   "filterable": 1
+  },
+  {
+   "key": "极速资源",
+   "name": "影视 • 极速[直连]",
+   "type": 1,
+   "api": "https://jszyapi.com/api.php/provide/vod/?ac=list"
+  },
+  {
+   "key": "金鹰资源",
+   "name": "金鹰资源",
+   "type": 1,
+   "api": "https://jyzyapi.com/provide/vod/"
+  },
+  {
+   "key": "pb_sbPpDm9G",
+   "name": "pastebin sbPpDm9G(订阅·1225ms)",
+   "type": 1,
+   "api": "https://pastebin.com/raw/sbPpDm9G",
+   "searchable": 1,
+   "quickSearch": 1,
+   "filterable": 1
+  },
+  {
+   "key": "量子",
+   "name": "影视 • 量子[直连]",
+   "type": 1,
+   "api": "https://cj.lziapi.com/api.php/provide/vod/"
+  },
+  {
+   "key": "率率",
+   "name": "影视 • 率率[直连]",
+   "type": 1,
+   "api": "https://suoniapi.com/api.php/provide/vod/?ac=list"
+  },
+  {
+   "key": "csp_SNzy",
+   "name": "🐉┃索尼┃高清",
+   "type": 1,
+   "api": "https://suoniapi.com/api.php/provide/vod/?ac=list"
   },
   {
    "key": "yuanhsing",
@@ -125,120 +164,6 @@
    "searchable": 0,
    "quickSearch": 0,
    "filterable": 0
-  },
-  {
-   "key": "pb_sbPpDm9G",
-   "name": "pastebin sbPpDm9G(订阅·1225ms)",
-   "type": 1,
-   "api": "https://pastebin.com/raw/sbPpDm9G",
-   "searchable": 1,
-   "quickSearch": 1,
-   "filterable": 1
-  },
-  {
-   "key": "qist_jsm",
-   "name": "qist jsm合集(无广告向·784ms)",
-   "type": 1,
-   "api": "https://qist.wyfc.qzz.io/jsm.json",
-   "searchable": 1,
-   "quickSearch": 1,
-   "filterable": 1
-  },
-  {
-   "key": "建安采集",
-   "name": "影视 • 建安",
-   "type": 1,
-   "api": "http://154.219.117.232:9981/jacloudapi.php/provide/vod"
-  },
-  {
-   "key": "量子",
-   "name": "影视 • 量子[直连]",
-   "type": 1,
-   "api": "https://cj.lziapi.com/api.php/provide/vod/"
-  },
-  {
-   "key": "非凡",
-   "name": "影视 • 非凡[直连]",
-   "type": 1,
-   "api": "http://ffzy.tv/api.php/provide/vod/"
-  },
-  {
-   "key": "光速资源",
-   "name": "光速资源",
-   "type": 1,
-   "api": "https://api.guangsuapi.com/api.php/provide/vod/"
-  },
-  {
-   "key": "率率",
-   "name": "影视 • 率率[直连]",
-   "type": 1,
-   "api": "https://suoniapi.com/api.php/provide/vod/?ac=list"
-  },
-  {
-   "key": "金鹰资源",
-   "name": "金鹰资源",
-   "type": 1,
-   "api": "https://jyzyapi.com/provide/vod/"
-  },
-  {
-   "key": "极速资源",
-   "name": "影视 • 极速[直连]",
-   "type": 1,
-   "api": "https://jszyapi.com/api.php/provide/vod/?ac=list"
-  },
-  {
-   "key": "天涯采集",
-   "name": "影视 • 天涯",
-   "type": 1,
-   "api": "http://tyyszy.com/api.php/provide/vod"
-  },
-  {
-   "key": "量子资源",
-   "name": "🥑┃量子┃资源",
-   "type": 1,
-   "api": "https://lzizy1.com/api.php/provide/vod/"
-  },
-  {
-   "key": "非凡资源",
-   "name": "非凡资源",
-   "type": 1,
-   "api": "http://cj.ffzyapi.com/api.php/provide/vod/"
-  },
-  {
-   "key": "电影天堂",
-   "name": "影视 • 电影天堂",
-   "type": 1,
-   "api": "http://caiji.dyttzyapi.com/api.php/provide/vod"
-  },
-  {
-   "key": "红牛资源",
-   "name": "红牛资源",
-   "type": 1,
-   "api": "https://www.hongniuzy2.com/api.php/provide/vod/"
-  },
-  {
-   "key": "csp_SNzy",
-   "name": "🐉┃索尼┃高清",
-   "type": 1,
-   "api": "https://suoniapi.com/api.php/provide/vod/?ac=list"
-  },
-  {
-   "key": "暴风",
-   "name": "暴风",
-   "type": 1,
-   "api": "https://bfzyapi.com/api.php/provide/vod"
-  },
-  {
-   "key": "TV-茅台资源",
-   "name": "茅台采集",
-   "type": 1,
-   "api": "https://caiji.maotaizy.cc/api.php/provide/vod/"
-  },
-  {
-   "key": "火狐",
-   "name": "🦊火狐采集",
-   "type": 1,
-   "api": "https://hhzyapi.com/api.php/provide/vod/"
   },
   {
    "key": "直播转点播",
@@ -4198,7 +4123,7 @@
  "header": {},
  "wallpaper": "",
  "rules": [],
- "_generated_at": "2026-10-24 15:44:35 UTC",
+ "_generated_at": "2026-10-24 15:51:12 UTC",
  "_generator": "build_config.py",
- "_site_count": 428
+ "_site_count": 418
 }

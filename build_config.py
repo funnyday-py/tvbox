@@ -197,7 +197,33 @@ def build():
     cfg["sites"] = new_sites
     print("jsdelivr 源改写: %d" % n_fixed)
 
-    # 4) 元信息（便于电视端排查）
+    # 4) 健康源前置：分类有内容的采集源排最前，首页默认源=分类无空壳的源
+    #    （解决"开机进来点分类是空的"——空壳一级分类是源站数据结构，无法隐藏，
+    #     只能让默认源本身就是健康的）
+    check_path = os.path.join(DEPLOY, "vod_check.json")
+    if os.path.exists(check_path):
+        try:
+            checks = {r["key"]: r for r in json.load(open(check_path, encoding="utf-8"))
+                      if r.get("ok")}
+        except Exception:
+            checks = {}
+
+        def health(s):
+            r = checks.get(s.get("key"))
+            if not r:
+                return (-1, 0)
+            return (len(r.get("good", [])),
+                    sum(c["total"] for c in r.get("good", [])))
+
+        t1 = [s for s in cfg["sites"] if str(s.get("type")) == "1"]
+        others = [s for s in cfg["sites"] if str(s.get("type")) != "1"]
+        t1.sort(key=health, reverse=True)
+        cfg["sites"] = t1 + others
+        if t1:
+            print("首页默认源: %s（%d 个有效分类）"
+                  % (t1[0].get("name"), max(health(t1[0])[0], 0)))
+
+    # 5) 元信息（便于电视端排查）
     cfg["_generated_at"] = datetime.now(timezone.utc).strftime("%Y-%m-%d %H:%M:%S UTC")
     cfg["_generator"] = "build_config.py"
     cfg["_site_count"] = len(cfg.get("sites", []))
