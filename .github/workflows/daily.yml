@@ -1,0 +1,76 @@
+name: Daily TVBox Config Update
+
+on:
+  schedule:
+    # 每天 UTC 20:10 = 北京时间 04:10（避开 GitHub 整点高峰）
+    - cron: "10 20 * * *"
+  workflow_dispatch: {}   # 支持手动触发
+
+permissions:
+  contents: write
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+        with:
+          token: ${{ secrets.GITHUB_TOKEN }}
+
+      - name: Setup Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: "3.11"
+
+      - name: Install deps
+        run: pip install requests
+
+      - name: Refresh live list & spider jar
+        run: |
+          set -e
+          mkdir -p deploy
+          BASE="https://raw.githubusercontent.com/gaotianliuyun/gao/master"
+          # 直播源
+          curl -fsSL --retry 3 --max-time 90 "$BASE/list.txt" -o deploy/live.txt \
+            || echo "WARN: live.txt 下载失败，沿用仓库内旧文件"
+          # spider jar（用 GitHub API raw，避开 CDN 对 jar 的 403）
+          curl -fsSL --retry 3 --max-time 90 \
+            -H "Accept: application/vnd.github.raw" \
+            "https://api.github.com/repos/gaotianliuyun/gao/contents/jar/custom_spider.jar" \
+            -o deploy/spider.jar \
+            || echo "WARN: spider.jar 下载失败，沿用仓库内旧文件"
+          ls -lh deploy/
+
+      - name: Probe VOD sources (drop dead ones)
+        run: |
+          python probe_vod.py > deploy/_probe.txt 2>&1 || true
+          tail -40 deploy/_probe.txt
+
+      - name: Build config
+        run: python build_config.py --check
+
+      - name: Validate output
+        run: |
+          python - <<'PY'
+          import json, sys
+          cfg = json.load(open("deploy/tvbox.json", encoding="utf-8"))
+          assert cfg.get("sites"), "sites 为空"
+          assert cfg.get("spider"), "spider 为空"
+          lives = cfg.get("lives") or []
+          assert lives, "lives 为空"
+          ch = sum(len(g["channels"]) for g in lives)
+          print(f"OK sites={len(cfg['sites'])} lives={len(lives)}组/{ch}频道")
+          PY
+
+      - name: Commit & push
+        run: |
+          git config user.name "tvbox-bot"
+          git config user.email "tvbox-bot@users.noreply.github.com"
+          git add -A
+          if git diff --staged --quiet; then
+            echo "无变化，跳过提交"
+          else
+            git commit -m "chore: 每日更新 TVBox 配置 $(date -u '+%Y-%m-%d %H:%M UTC')"
+            git push
+          fi
