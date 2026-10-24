@@ -73,10 +73,40 @@
    "api": "http://caiji.dyttzyapi.com/api.php/provide/vod"
   },
   {
+   "key": "火狐",
+   "name": "🦊火狐采集",
+   "type": 1,
+   "api": "https://hhzyapi.com/api.php/provide/vod/"
+  },
+  {
    "key": "HongNiu",
    "name": "红牛资源",
    "type": 1,
    "api": "https://www.hongniuzy2.com/api.php/provide/vod/at/josn/",
+   "searchable": 1,
+   "quickSearch": 1,
+   "filterable": 1
+  },
+  {
+   "key": "MD",
+   "name": "魔都",
+   "type": 1,
+   "api": "https://www.mdzyapi.com/api.php/provide/vod/?ac=list",
+   "searchable": 1,
+   "quickSearch": 1,
+   "filterable": 1
+  },
+  {
+   "key": "暴风",
+   "name": "暴风",
+   "type": 1,
+   "api": "https://bfzyapi.com/api.php/provide/vod"
+  },
+  {
+   "key": "jinYing",
+   "name": "金鹰",
+   "type": 1,
+   "api": "https://jyzyapi.com/provide/vod/from/jinyingyun/at/json",
    "searchable": 1,
    "quickSearch": 1,
    "filterable": 1
@@ -94,10 +124,49 @@
    "api": "https://jyzyapi.com/provide/vod/"
   },
   {
+   "key": "GuangSU",
+   "name": "光速",
+   "type": 1,
+   "api": "https://api.guangsuapi.com/api.php/provide/vod/josn",
+   "searchable": 1,
+   "quickSearch": 1,
+   "filterable": 1
+  },
+  {
+   "key": "光速资源",
+   "name": "光速资源",
+   "type": 1,
+   "api": "https://api.guangsuapi.com/api.php/provide/vod/"
+  },
+  {
+   "key": "量子资源",
+   "name": "🥑┃量子┃资源",
+   "type": 1,
+   "api": "https://lzizy1.com/api.php/provide/vod/"
+  },
+  {
+   "key": "KuaiChe",
+   "name": "快车资源",
+   "type": 1,
+   "api": "https://caiji.kuaichezy.org/api.php/provide/vod/?ac=list",
+   "searchable": 1,
+   "quickSearch": 1,
+   "filterable": 1
+  },
+  {
    "key": "pb_sbPpDm9G",
    "name": "pastebin sbPpDm9G(订阅·1225ms)",
    "type": 1,
    "api": "https://pastebin.com/raw/sbPpDm9G",
+   "searchable": 1,
+   "quickSearch": 1,
+   "filterable": 1
+  },
+  {
+   "key": "qist_jsm",
+   "name": "qist jsm合集(无广告向·784ms)",
+   "type": 1,
+   "api": "https://qist.wyfc.qzz.io/jsm.json",
    "searchable": 1,
    "quickSearch": 1,
    "filterable": 1
@@ -113,6 +182,12 @@
    "name": "影视 • 率率[直连]",
    "type": 1,
    "api": "https://suoniapi.com/api.php/provide/vod/?ac=list"
+  },
+  {
+   "key": "红牛资源",
+   "name": "红牛资源",
+   "type": 1,
+   "api": "https://www.hongniuzy2.com/api.php/provide/vod/"
   },
   {
    "key": "csp_SNzy",
@@ -4123,7 +4198,7 @@
  "header": {},
  "wallpaper": "",
  "rules": [],
- "_generated_at": "2026-10-24 15:51:12 UTC",
+ "_generated_at": "2026-10-24 22:24:58 UTC",
  "_generator": "build_config.py",
- "_site_count": 418
+ "_site_count": 428
 }
