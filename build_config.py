@@ -113,8 +113,8 @@ def build_lives_redirect():
     import base64
     raw = "https://raw.githubusercontent.com/funnyday-py/tvbox/main/deploy/live.txt"
     mirrors = [
-        ("直播·线路1", "https://gh-proxy.com/" + raw),
-        ("直播·线路2", "https://cdn.jsdelivr.net/gh/funnyday-py/tvbox@main/deploy/live.txt"),
+        ("直播·线路1", "https://cdn.jsdelivr.net/gh/funnyday-py/tvbox@main/deploy/live.txt"),
+        ("直播·线路2", "https://gh-proxy.com/" + raw),
     ]
     lives = []
     for gname, u in mirrors:

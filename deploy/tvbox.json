@@ -94,12 +94,6 @@
    "filterable": 1
   },
   {
-   "key": "火狐",
-   "name": "🦊火狐采集",
-   "type": 1,
-   "api": "https://hhzyapi.com/api.php/provide/vod/"
-  },
-  {
    "key": "HongNiu",
    "name": "红牛资源",
    "type": 1,
@@ -131,21 +125,6 @@
    "searchable": 1,
    "quickSearch": 1,
    "filterable": 1
-  },
-  {
-   "key": "jinYing",
-   "name": "金鹰",
-   "type": 1,
-   "api": "https://jyzyapi.com/provide/vod/from/jinyingyun/at/json",
-   "searchable": 1,
-   "quickSearch": 1,
-   "filterable": 1
-  },
-  {
-   "key": "极速资源",
-   "name": "影视 • 极速[直连]",
-   "type": 1,
-   "api": "https://jszyapi.com/api.php/provide/vod/?ac=list"
   },
   {
    "key": "GuangSU",
@@ -3227,7 +3206,7 @@
     {
      "name": "全部频道",
      "urls": [
-      "proxy://do=live&type=txt&ext=aHR0cHM6Ly9naC1wcm94eS5jb20vaHR0cHM6Ly9yYXcuZ2l0aHVidXNlcmNvbnRlbnQuY29tL2Z1bm55ZGF5LXB5L3R2Ym94L21haW4vZGVwbG95L2xpdmUudHh0"
+      "proxy://do=live&type=txt&ext=aHR0cHM6Ly9jZG4uanNkZWxpdnIubmV0L2doL2Z1bm55ZGF5LXB5L3R2Ym94QG1haW4vZGVwbG95L2xpdmUudHh0"
      ]
     }
    ]
@@ -3238,7 +3217,7 @@
     {
      "name": "全部频道",
      "urls": [
-      "proxy://do=live&type=txt&ext=aHR0cHM6Ly9jZG4uanNkZWxpdnIubmV0L2doL2Z1bm55ZGF5LXB5L3R2Ym94QG1haW4vZGVwbG95L2xpdmUudHh0"
+      "proxy://do=live&type=txt&ext=aHR0cHM6Ly9naC1wcm94eS5jb20vaHR0cHM6Ly9yYXcuZ2l0aHVidXNlcmNvbnRlbnQuY29tL2Z1bm55ZGF5LXB5L3R2Ym94L21haW4vZGVwbG95L2xpdmUudHh0"
      ]
     }
    ]
@@ -3523,7 +3502,7 @@
  "header": {},
  "wallpaper": "",
  "rules": [],
- "_generated_at": "2026-10-25 08:37:15 UTC",
+ "_generated_at": "2026-10-25 08:50:43 UTC",
  "_generator": "build_config.py",
- "_site_count": 426
+ "_site_count": 423
 }
