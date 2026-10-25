@@ -109,17 +109,18 @@ def parse_live_txt(path):
 
 
 def build_lives_redirect():
-    """proxy://do=live 重定向写法（TVBox/FongMi 通用），双线路镜像。"""
+    """proxy://do=live 重定向写法（TVBoxOSC/FongMi 通用），双线路镜像。"""
     import base64
+    raw = "https://raw.githubusercontent.com/funnyday-py/tvbox/main/deploy/live.txt"
     mirrors = [
-        "https://gh-proxy.com/https://raw.githubusercontent.com/funnyday-py/tvbox/main/deploy/live.txt",
-        "https://ghproxy.net/https://raw.githubusercontent.com/funnyday-py/tvbox/main/deploy/live.txt",
+        ("直播·线路1", "https://gh-proxy.com/" + raw),
+        ("直播·线路2", "https://cdn.jsdelivr.net/gh/funnyday-py/tvbox@main/deploy/live.txt"),
     ]
     lives = []
-    for i, u in enumerate(mirrors):
-        ext = base64.urlsafe_b64encode(u.encode("utf-8")).decode("ascii")
+    for gname, u in mirrors:
+        ext = base64.b64encode(u.encode("utf-8")).decode("ascii")
         lives.append({
-            "group": "直播·线路%d" % (i + 1),
+            "group": gname,
             "channels": [{"name": "全部频道", "urls": ["proxy://do=live&type=txt&ext=" + ext]}],
         })
     return lives

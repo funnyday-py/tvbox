@@ -3238,7 +3238,7 @@
     {
      "name": "全部频道",
      "urls": [
-      "proxy://do=live&type=txt&ext=aHR0cHM6Ly9naHByb3h5Lm5ldC9odHRwczovL3Jhdy5naXRodWJ1c2VyY29udGVudC5jb20vZnVubnlkYXktcHkvdHZib3gvbWFpbi9kZXBsb3kvbGl2ZS50eHQ="
+      "proxy://do=live&type=txt&ext=aHR0cHM6Ly9jZG4uanNkZWxpdnIubmV0L2doL2Z1bm55ZGF5LXB5L3R2Ym94QG1haW4vZGVwbG95L2xpdmUudHh0"
      ]
     }
    ]
@@ -3523,7 +3523,7 @@
  "header": {},
  "wallpaper": "",
  "rules": [],
- "_generated_at": "2026-10-25 08:29:59 UTC",
+ "_generated_at": "2026-10-25 08:37:15 UTC",
  "_generator": "build_config.py",
  "_site_count": 426
 }
