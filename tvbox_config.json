@@ -3218,6 +3218,15 @@
       "searchable": 1,
       "quickSearch": 1,
       "filterable": 1
+    },
+    {
+      "key": "New5327",
+      "name": "🌟 创享影视",
+      "type": 1,
+      "api": "http://ys.cxkjg.cn/api/provide/vod",
+      "searchable": 1,
+      "quickSearch": 1,
+      "filterable": 1
     }
   ],
   "lives": [
