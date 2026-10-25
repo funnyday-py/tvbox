@@ -1452,5 +1452,77 @@
    }
   ],
   "reason": ""
+ },
+ {
+  "key": "New5718",
+  "name": "影视 • 尤酷[直连]",
+  "ok": true,
+  "ms": 0,
+  "class_total": 29,
+  "good": [
+   {
+    "id": 3,
+    "name": "综艺",
+    "total": 2241
+   },
+   {
+    "id": 4,
+    "name": "动漫",
+    "total": 6117
+   },
+   {
+    "id": 6,
+    "name": "动作片",
+    "total": 4455
+   },
+   {
+    "id": 7,
+    "name": "喜剧片",
+    "total": 4929
+   },
+   {
+    "id": 8,
+    "name": "爱情片",
+    "total": 2591
+   },
+   {
+    "id": 9,
+    "name": "科幻片",
+    "total": 1073
+   }
+  ],
+  "empty": [],
+  "reason": ""
+ },
+ {
+  "key": "New5168",
+  "name": "百度",
+  "ok": true,
+  "ms": 0,
+  "class_total": 54,
+  "good": [
+   {
+    "id": 6,
+    "name": "动作片",
+    "total": 4970
+   },
+   {
+    "id": 7,
+    "name": "喜剧片",
+    "total": 4658
+   },
+   {
+    "id": 8,
+    "name": "爱情片",
+    "total": 1336
+   },
+   {
+    "id": 9,
+    "name": "科幻片",
+    "total": 1218
+   }
+  ],
+  "empty": [],
+  "reason": ""
  }
 ]

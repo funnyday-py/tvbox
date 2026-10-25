@@ -3242,6 +3242,24 @@
       "type": 3,
       "api": "csp_YingSo",
       "ext": "https://cdn.jsdelivr.net/gh/gaotianliuyun/gao@master/lib/token.json$$1"
+    },
+    {
+      "key": "New5718",
+      "name": "影视 • 尤酷[直连]",
+      "type": 1,
+      "api": "https://api.ukuapi.com/api.php/provide/vod/?ac=list",
+      "searchable": 1,
+      "quickSearch": 1,
+      "filterable": 1
+    },
+    {
+      "key": "New5168",
+      "name": "百度",
+      "type": 1,
+      "api": "https://api.apibdzy.com/api.php/provide/vod?ac=list",
+      "searchable": 1,
+      "quickSearch": 1,
+      "filterable": 1
     }
   ],
   "lives": [

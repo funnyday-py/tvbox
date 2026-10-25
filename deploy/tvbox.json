@@ -73,6 +73,15 @@
    "api": "http://caiji.dyttzyapi.com/api.php/provide/vod"
   },
   {
+   "key": "New5718",
+   "name": "影视 • 尤酷[直连]",
+   "type": 1,
+   "api": "https://api.ukuapi.com/api.php/provide/vod/?ac=list",
+   "searchable": 1,
+   "quickSearch": 1,
+   "filterable": 1
+  },
+  {
    "key": "火狐",
    "name": "🦊火狐采集",
    "type": 1,
@@ -101,6 +110,15 @@
    "name": "暴风",
    "type": 1,
    "api": "https://bfzyapi.com/api.php/provide/vod"
+  },
+  {
+   "key": "New5168",
+   "name": "百度",
+   "type": 1,
+   "api": "https://api.apibdzy.com/api.php/provide/vod?ac=list",
+   "searchable": 1,
+   "quickSearch": 1,
+   "filterable": 1
   },
   {
    "key": "jinYing",
@@ -4198,7 +4216,7 @@
  "header": {},
  "wallpaper": "",
  "rules": [],
- "_generated_at": "2026-10-25 05:25:57 UTC",
+ "_generated_at": "2026-10-25 05:34:33 UTC",
  "_generator": "build_config.py",
- "_site_count": 428
+ "_site_count": 430
 }
