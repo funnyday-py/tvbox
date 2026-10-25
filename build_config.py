@@ -108,6 +108,23 @@ def parse_live_txt(path):
     return groups
 
 
+def build_lives_redirect():
+    """proxy://do=live 重定向写法（TVBox/FongMi 通用），双线路镜像。"""
+    import base64
+    mirrors = [
+        "https://gh-proxy.com/https://raw.githubusercontent.com/funnyday-py/tvbox/main/deploy/live.txt",
+        "https://ghproxy.net/https://raw.githubusercontent.com/funnyday-py/tvbox/main/deploy/live.txt",
+    ]
+    lives = []
+    for i, u in enumerate(mirrors):
+        ext = base64.urlsafe_b64encode(u.encode("utf-8")).decode("ascii")
+        lives.append({
+            "group": "直播·线路%d" % (i + 1),
+            "channels": [{"name": "全部频道", "urls": ["proxy://do=live&type=txt&ext=" + ext]}],
+        })
+    return lives
+
+
 def fix_jsdelivr(site):
     """jsdelivr 单点故障：在 ext/api 里保留主链，追加镜像兜底。
 
@@ -179,14 +196,13 @@ def build():
     cfg["spider"] = build_spider()
     print("spider: %s" % (cfg["spider"][:90] or "(空)"))
 
-    # 2) lives
-    groups = parse_live_txt(LIVE_TXT)
-    if groups:
-        cfg["lives"] = groups
-        total = sum(len(g["channels"]) for g in groups)
-        print("lives: %d 组 / %d 频道" % (len(groups), total))
-    else:
-        print("[warn] lives 未替换，保留原值")
+    # 2) lives —— proxy:// 重定向：配置里只放一行地址，电视端运行时自拉 live.txt。
+    #    不再内联频道表：老 App 对大块内联 lives 解析不稳（实测两次崩溃），
+    #    proxy://do=live 是 TVBox/FongMi 通用的最兼容写法。
+    groups = parse_live_txt(LIVE_TXT)   # 仅用于统计/校验，不再进配置
+    cfg["lives"] = build_lives_redirect()
+    total = sum(len(g["channels"]) for g in groups)
+    print("lives: proxy 重定向 -> live.txt (%d 组 / %d 频道)" % (len(groups), total))
 
     # 3) jsdelivr 镜像
     n_fixed = 0
