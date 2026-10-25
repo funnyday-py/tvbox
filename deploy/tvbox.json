@@ -1,6 +1,57 @@
 {
  "sites": [
   {
+   "key": "New5327",
+   "name": "🌟 创享影视",
+   "type": 1,
+   "api": "http://ys.cxkjg.cn/api/provide/vod",
+   "searchable": 1,
+   "quickSearch": 1,
+   "filterable": 1
+  },
+  {
+   "key": "New5718",
+   "name": "影视 • 尤酷[直连]",
+   "type": 1,
+   "api": "https://api.ukuapi.com/api.php/provide/vod/?ac=list",
+   "searchable": 1,
+   "quickSearch": 1,
+   "filterable": 1
+  },
+  {
+   "key": "New5168",
+   "name": "bdzy资源",
+   "type": 1,
+   "api": "https://api.apibdzy.com/api.php/provide/vod?ac=list",
+   "searchable": 1,
+   "quickSearch": 1,
+   "filterable": 1
+  },
+  {
+   "key": "pb_sbPpDm9G",
+   "name": "pastebin sbPpDm9G(订阅·1225ms)",
+   "type": 1,
+   "api": "https://pastebin.com/raw/sbPpDm9G",
+   "searchable": 1,
+   "quickSearch": 1,
+   "filterable": 1
+  },
+  {
+   "key": "qist_jsm",
+   "name": "qist jsm合集(无广告向·784ms)",
+   "type": 1,
+   "api": "https://qist.wyfc.qzz.io/jsm.json",
+   "searchable": 1,
+   "quickSearch": 1,
+   "filterable": 1
+  },
+  {
+   "key": "率率",
+   "name": "影视 • 率率[直连]",
+   "type": 1,
+   "api": "https://suoniapi.com/api.php/provide/vod/?ac=list"
+  },
+  {
    "key": "建安采集",
    "name": "影视 • 建安",
    "type": 1,
@@ -11,15 +62,6 @@
    "name": "茅台采集",
    "type": 1,
    "api": "https://caiji.maotaizy.cc/api.php/provide/vod/at/josn/",
-   "searchable": 1,
-   "quickSearch": 1,
-   "filterable": 1
-  },
-  {
-   "key": "New5327",
-   "name": "🌟 创享影视",
-   "type": 1,
-   "api": "http://ys.cxkjg.cn/api/provide/vod",
    "searchable": 1,
    "quickSearch": 1,
    "filterable": 1
@@ -76,15 +118,6 @@
    "api": "http://caiji.dyttzyapi.com/api.php/provide/vod"
   },
   {
-   "key": "New5718",
-   "name": "影视 • 尤酷[直连]",
-   "type": 1,
-   "api": "https://api.ukuapi.com/api.php/provide/vod/?ac=list",
-   "searchable": 1,
-   "quickSearch": 1,
-   "filterable": 1
-  },
-  {
    "key": "HongNiu",
    "name": "红牛资源",
    "type": 1,
@@ -109,15 +142,6 @@
    "api": "https://bfzyapi.com/api.php/provide/vod"
   },
   {
-   "key": "New5168",
-   "name": "bdzy资源",
-   "type": 1,
-   "api": "https://api.apibdzy.com/api.php/provide/vod?ac=list",
-   "searchable": 1,
-   "quickSearch": 1,
-   "filterable": 1
-  },
-  {
    "key": "GuangSU",
    "name": "光速",
    "type": 1,
@@ -140,30 +164,6 @@
    "searchable": 1,
    "quickSearch": 1,
    "filterable": 1
-  },
-  {
-   "key": "pb_sbPpDm9G",
-   "name": "pastebin sbPpDm9G(订阅·1225ms)",
-   "type": 1,
-   "api": "https://pastebin.com/raw/sbPpDm9G",
-   "searchable": 1,
-   "quickSearch": 1,
-   "filterable": 1
-  },
-  {
-   "key": "qist_jsm",
-   "name": "qist jsm合集(无广告向·784ms)",
-   "type": 1,
-   "api": "https://qist.wyfc.qzz.io/jsm.json",
-   "searchable": 1,
-   "quickSearch": 1,
-   "filterable": 1
-  },
-  {
-   "key": "率率",
-   "name": "影视 • 率率[直连]",
-   "type": 1,
-   "api": "https://suoniapi.com/api.php/provide/vod/?ac=list"
   },
   {
    "key": "Real360",
@@ -3523,7 +3523,7 @@
  "header": {},
  "wallpaper": "",
  "rules": [],
- "_generated_at": "2026-10-25 08:57:56 UTC",
+ "_generated_at": "2026-10-25 09:08:53 UTC",
  "_generator": "build_config.py",
  "_site_count": 426
 }

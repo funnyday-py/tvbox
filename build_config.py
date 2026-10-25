@@ -238,14 +238,19 @@ def build():
         def health(s):
             r = checks.get(s.get("key"))
             if not r:
-                return (-1, 0)
+                return (0, 0, 0)   # 未检测 = 排到已验证健康源之后
             return (len(r.get("good", [])),
-                    sum(c["total"] for c in r.get("good", [])))
+                    sum(c["total"] for c in r.get("good", [])),
+                    len(r.get("empty") or []))
 
         t1 = [s for s in cfg["sites"] if str(s.get("type")) == "1"]
         others = [s for s in cfg["sites"] if str(s.get("type")) != "1"]
-        # 沉底：伦理源排最后（组内仍按健康度降序）
+        # 排序规则：
+        #   1) 伦理/福利源沉底（TVBoxOSC 无分类隐藏）
+        #   2) 有空壳分类的源沉到全健康源之后（对齐其他成熟仓库：只用分类全有货的源）
+        #   3) 组内按健康分类数、内容量降序
         t1.sort(key=lambda s: (1 if is_ethics(s) else 0,
+                               1 if health(s)[2] > 0 else 0,
                                -health(s)[0], -health(s)[1]))
         cfg["sites"] = t1 + others
         if t1:
