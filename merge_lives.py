@@ -15,6 +15,7 @@ build_config.py 会把 live.txt 内联进 deploy/tvbox.json 的 lives。
 import os
 import re
 import ssl
+import time
 import urllib.request
 
 BASE = os.path.dirname(os.path.abspath(__file__))
@@ -24,27 +25,33 @@ CTX.check_hostname = False
 CTX.verify_mode = ssl.CERT_NONE
 
 M3U_SOURCES = [
-    ("🛰 综合直播", "http://193.123.86.190:14888/TV/iptv.php"),
-    ("🐯 虎牙一起看", "https://sub.ottiptv.cc/huyayqk.m3u"),
-    ("🐟 斗鱼一起看", "https://sub.ottiptv.cc/douyuyqk.m3u"),
-    ("🎪 YY轮播", "https://sub.ottiptv.cc/yylunbo.m3u"),
+    ("🛰 综合直播", "http://193.123.86.190:14888/TV/iptv.php", None),
+    ("🐯 虎牙一起看", "https://sub.ottiptv.cc/huyayqk.m3u", "虎牙"),
+    ("🐟 斗鱼一起看", "https://sub.ottiptv.cc/douyuyqk.m3u", "斗鱼"),
 ]
+# 老电视端内存有限：每组封顶，虎牙/斗鱼组数多必须限制，否则直播页直接 OOM 崩溃
+MAX_PER_GROUP = 50     # 单组最多频道数
+MAX_PER_SOURCE = 150   # 单来源（虎牙/斗鱼）最多频道数
+DROP_GROUPS = {"列表更新时间"}  # YY 测试文件的垃圾组
 FALLBACK_TXT = "https://gh-proxy.com/https://raw.githubusercontent.com/gaotianliuyun/gao/master/list.txt"
 
 
-def get(u):
-    last = ""
-    for proxy in (None, {}):
-        try:
-            op = urllib.request.build_opener(
-                urllib.request.ProxyHandler(proxy),
-                urllib.request.HTTPSHandler(context=CTX),
-            )
-            req = urllib.request.Request(u, headers={"User-Agent": "okhttp/4.9.1"})
-            return op.open(req, timeout=25).read().decode("utf-8", "ignore")
-        except Exception as e:
-            last = str(e)[:60]
-    print("[warn] 拉取失败 %s: %s" % (u, last))
+def get(u, tries=2):
+    for i in range(tries):
+        last = ""
+        for proxy in (None, {}):
+            try:
+                op = urllib.request.build_opener(
+                    urllib.request.ProxyHandler(proxy),
+                    urllib.request.HTTPSHandler(context=CTX),
+                )
+                req = urllib.request.Request(u, headers={"User-Agent": "okhttp/4.9.1"})
+                return op.open(req, timeout=20).read().decode("utf-8", "ignore")
+            except Exception as e:
+                last = str(e)[:60]
+        print("[warn] 第%d次拉取失败 %s: %s" % (i + 1, u, last))
+        time.sleep(1)
+    print("[warn] 放弃 %s" % u)
     return None
 
 
@@ -78,27 +85,31 @@ def main():
     out = []
     seen = set()
     stat = []
-    for gname, url in M3U_SOURCES:
+    for gname, url, tag in M3U_SOURCES:
         body = get(url)
         if not body:
             stat.append((gname, 0))
             continue
         groups, order = m3u_to_groups(body, gname)
-        n = 0
+        n_src = 0
         for g in order:
+            if g in DROP_GROUPS or n_src >= MAX_PER_SOURCE:
+                break
             chan = []
             for cname, u in groups[g]:
-                if u in seen:
+                if u in seen or len(chan) >= MAX_PER_GROUP:
                     continue
                 seen.add(u)
                 chan.append((cname, u))
             if not chan:
                 continue
-            out.append("%s,#genre#" % g)
+            # 加来源前缀，避免虎牙/斗鱼出现同名组互相顶掉
+            out_g = ("%s·%s" % (tag, g)) if tag else g
+            out.append("%s,#genre#" % out_g)
             for cname, u in chan:
                 out.append("%s,%s" % (cname, u))
-            n += len(chan)
-        stat.append((gname, n))
+            n_src += len(chan)
+        stat.append((gname, n_src))
 
     # 旧央卫视垫底（本身就是 TVBox txt 格式，原样追加）
     fb = get(FALLBACK_TXT)
