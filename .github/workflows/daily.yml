@@ -50,6 +50,9 @@ jobs:
       - name: Build config
         run: python build_config.py --check
 
+      - name: Update README status board
+        run: python gen_status.py
+
       - name: Validate output
         run: |
           python - <<'PY'

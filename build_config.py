@@ -145,7 +145,9 @@ def prune_dead_sites(cfg, probe_path):
         return 0
 
     # probe_vod.json 只存了 key，不含 api 基址；直接用 ok 标记建黑名单
-    dead_keys = {r.get("key") for r in results if r.get("ok") is False}
+    # 「受限」（401/403/405/429 反爬）不等于死亡，保守保留不剪（借鉴 laoma528 三态判定）
+    dead_keys = {r.get("key") for r in results
+                 if r.get("ok") is False and not r.get("restricted")}
 
     sites = cfg.get("sites", [])
     kept = []

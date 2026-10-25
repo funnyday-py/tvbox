@@ -36,6 +36,12 @@ def probe(site):
         r = requests.get(url, headers=UA, timeout=TIMEOUT)
         ms = int((time.time() - t0) * 1000)
         if r.status_code != 200:
+            # 借鉴 laoma528/awesome-zhuiju-free 的三态判定：
+            # 401/403/405/429 = 反爬/地域限制，源未必死（对家庭宽带 IP 可能可用），不应剪枝
+            if r.status_code in (401, 403, 405, 429):
+                return {"name": site.get("name"), "key": site.get("key"),
+                        "ok": False, "restricted": True, "ms": ms,
+                        "reason": "受限 HTTP %d" % r.status_code}
             return {"name": site.get("name"), "key": site.get("key"),
                     "ok": False, "ms": ms, "reason": "HTTP %d" % r.status_code}
         try:
