@@ -3222,18 +3222,7 @@
  ],
  "lives": [
   {
-   "group": "直播·线路1",
-   "channels": [
-    {
-     "name": "全部频道",
-     "urls": [
-      "proxy://do=live&type=txt&ext=aHR0cHM6Ly9jZG4uanNkZWxpdnIubmV0L2doL2Z1bm55ZGF5LXB5L3R2Ym94QG1haW4vZGVwbG95L2xpdmUudHh0"
-     ]
-    }
-   ]
-  },
-  {
-   "group": "直播·线路2",
+   "group": "直播",
    "channels": [
     {
      "name": "全部频道",
@@ -3523,7 +3512,7 @@
  "header": {},
  "wallpaper": "",
  "rules": [],
- "_generated_at": "2026-10-25 09:08:53 UTC",
+ "_generated_at": "2026-10-25 09:33:20 UTC",
  "_generator": "build_config.py",
  "_site_count": 426
 }

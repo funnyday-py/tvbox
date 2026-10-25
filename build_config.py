@@ -109,21 +109,16 @@ def parse_live_txt(path):
 
 
 def build_lives_redirect():
-    """proxy://do=live 重定向写法（TVBoxOSC/FongMi 通用），双线路镜像。"""
+    """TVBoxOSC 兼容写法：单个 proxy:// 重定向组（多组会走错分支导致直播失效）。
+    实际拉取地址由 App 设置里的 LIVE_URL 决定（会覆盖配置），此处为初始值。"""
     import base64
     raw = "https://raw.githubusercontent.com/funnyday-py/tvbox/main/deploy/live.txt"
-    mirrors = [
-        ("直播·线路1", "https://cdn.jsdelivr.net/gh/funnyday-py/tvbox@main/deploy/live.txt"),
-        ("直播·线路2", "https://gh-proxy.com/" + raw),
-    ]
-    lives = []
-    for gname, u in mirrors:
-        ext = base64.b64encode(u.encode("utf-8")).decode("ascii")
-        lives.append({
-            "group": gname,
-            "channels": [{"name": "全部频道", "urls": ["proxy://do=live&type=txt&ext=" + ext]}],
-        })
-    return lives
+    u = "https://gh-proxy.com/" + raw
+    ext = base64.b64encode(u.encode("utf-8")).decode("ascii")
+    return [{
+        "group": "直播",
+        "channels": [{"name": "全部频道", "urls": ["proxy://do=live&type=txt&ext=" + ext]}],
+    }]
 
 
 def fix_jsdelivr(site):
