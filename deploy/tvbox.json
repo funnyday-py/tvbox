@@ -3222,12 +3222,698 @@
  ],
  "lives": [
   {
-   "group": "直播",
+   "group": "CCTV",
    "channels": [
     {
-     "name": "全部频道",
+     "name": "CCTV1",
      "urls": [
-      "proxy://do=live&type=txt&ext=aHR0cHM6Ly9naC1wcm94eS5jb20vaHR0cHM6Ly9yYXcuZ2l0aHVidXNlcmNvbnRlbnQuY29tL2Z1bm55ZGF5LXB5L3R2Ym94L21haW4vZGVwbG95L2xpdmUudHh0"
+      "http://ottrrs.hl.chinamobile.com/PLTV/88888888/224/3221226016/index.m3u8",
+      "http://ottrrs.hl.chinamobile.com/PLTV/88888888/224/3221226559/index.m3u8",
+      "http://ottrrs.hl.chinamobile.com/PLTV/88888888/224/3221226514/index.m3u8",
+      "http://39.134.67.108/PLTV/88888888/224/3221225816/1.m3u8"
+     ]
+    },
+    {
+     "name": "CCTV2",
+     "urls": [
+      "http://ottrrs.hl.chinamobile.com/PLTV/88888888/224/3221226540/index.m3u8",
+      "http://ottrrs.hl.chinamobile.com/PLTV/88888888/224/3221225588/index.m3u8",
+      "http://39.134.67.108/PLTV/88888888/224/3221225599/1.m3u8"
+     ]
+    },
+    {
+     "name": "CCTV3",
+     "urls": [
+      "http://ottrrs.hl.chinamobile.com/PLTV/88888888/224/3221226021/index.m3u8",
+      "http://39.134.67.108/PLTV/88888888/224/3221225799/1.m3u8"
+     ]
+    },
+    {
+     "name": "CCTV4",
+     "urls": [
+      "http://ottrrs.hl.chinamobile.com/PLTV/88888888/224/3221226428/index.m3u8",
+      "http://ottrrs.hl.chinamobile.com/PLTV/88888888/224/3221226007/index.m3u8",
+      "http://39.134.67.108/PLTV/88888888/224/3221225797/1.m3u8"
+     ]
+    },
+    {
+     "name": "CCTV5",
+     "urls": [
+      "http://ottrrs.hl.chinamobile.com/PLTV/88888888/224/3221226019/index.m3u8",
+      "http://39.134.67.108/PLTV/88888888/224/3221225818/1.m3u8"
+     ]
+    },
+    {
+     "name": "CCTV5+",
+     "urls": [
+      "http://ottrrs.hl.chinamobile.com/PLTV/88888888/224/3221225603/index.m3u8",
+      "http://39.134.67.108/PLTV/88888888/224/3221225507/1.m3u8"
+     ]
+    },
+    {
+     "name": "CCTV6",
+     "urls": [
+      "http://ottrrs.hl.chinamobile.com/PLTV/88888888/224/3221226010/index.m3u8",
+      "http://39.134.67.108/PLTV/88888888/224/3221225814/1.m3u8"
+     ]
+    },
+    {
+     "name": "CCTV7",
+     "urls": [
+      "http://ottrrs.hl.chinamobile.com/PLTV/88888888/224/3221225733/index.m3u8",
+      "http://39.134.67.108/PLTV/88888888/224/3221225671/1.m3u8"
+     ]
+    },
+    {
+     "name": "CCTV8",
+     "urls": [
+      "http://ottrrs.hl.chinamobile.com/PLTV/88888888/224/3221226008/index.m3u8",
+      "http://39.134.67.108/PLTV/88888888/224/3221225795/1.m3u8"
+     ]
+    },
+    {
+     "name": "CCTV9",
+     "urls": [
+      "http://ottrrs.hl.chinamobile.com/PLTV/88888888/224/3221225734/index.m3u8",
+      "http://39.134.67.108/PLTV/88888888/224/3221225676/1.m3u8"
+     ]
+    },
+    {
+     "name": "CCTV10",
+     "urls": [
+      "http://ottrrs.hl.chinamobile.com/PLTV/88888888/224/3221225730/index.m3u8",
+      "http://ottrrs.hl.chinamobile.com/PLTV/88888888/224/3221226473/index.m3u8",
+      "http://39.134.67.108/PLTV/88888888/224/3221225677/1.m3u8"
+     ]
+    },
+    {
+     "name": "CCTV11",
+     "urls": [
+      "http://ottrrs.hl.chinamobile.com/PLTV/88888888/224/3221226565/index.m3u8",
+      "http://ottrrs.hl.chinamobile.com/PLTV/88888888/224/3221225597/index.m3u8",
+      "http://39.134.67.108/PLTV/88888888/224/3221225517/1.m3u8"
+     ]
+    },
+    {
+     "name": "CCTV12",
+     "urls": [
+      "http://ottrrs.hl.chinamobile.com/PLTV/88888888/224/3221225731/index.m3u8",
+      "http://ottrrs.hl.chinamobile.com/PLTV/88888888/224/3221226568/index.m3u8",
+      "http://39.134.67.108/PLTV/88888888/224/3221225669/1.m3u8"
+     ]
+    },
+    {
+     "name": "CCTV13",
+     "urls": [
+      "http://ottrrs.hl.chinamobile.com/PLTV/88888888/224/3221226537/index.m3u8",
+      "http://ottrrs.hl.chinamobile.com/PLTV/88888888/224/3221226571/index.m3u8",
+      "http://ottrrs.hl.chinamobile.com/PLTV/88888888/224/3221226011/index.m3u8",
+      "http://39.134.67.108/PLTV/88888888/224/3221225812/1.m3u8"
+     ]
+    },
+    {
+     "name": "CCTV14",
+     "urls": [
+      "http://ottrrs.hl.chinamobile.com/PLTV/88888888/224/3221225732/index.m3u8",
+      "http://ottrrs.hl.chinamobile.com/PLTV/88888888/224/3221226591/index.m3u8",
+      "http://39.134.67.108/PLTV/88888888/224/3221225674/1.m3u8"
+     ]
+    },
+    {
+     "name": "CCTV15",
+     "urls": [
+      "http://ottrrs.hl.chinamobile.com/PLTV/88888888/224/3221226476/index.m3u8",
+      "http://ottrrs.hl.chinamobile.com/PLTV/88888888/224/3221225601/index.m3u8",
+      "http://39.134.67.108/PLTV/88888888/224/3221225513/1.m3u8"
+     ]
+    },
+    {
+     "name": "CCTV16",
+     "urls": [
+      "http://ottrrs.hl.chinamobile.com/PLTV/88888888/224/3221226100/index.m3u8",
+      "http://39.134.67.108/PLTV/88888888/224/3221225893/1.m3u8"
+     ]
+    },
+    {
+     "name": "CCTV17",
+     "urls": [
+      "http://ottrrs.hl.chinamobile.com/PLTV/88888888/224/3221225765/index.m3u8",
+      "http://39.134.67.108/PLTV/88888888/224/3221225708/1.m3u8"
+     ]
+    },
+    {
+     "name": "CETV1",
+     "urls": [
+      "http://ottrrs.hl.chinamobile.com/PLTV/88888888/224/3221225652/index.m3u8",
+      "http://39.134.67.108/PLTV/88888888/224/3221225563/1.m3u8"
+     ]
+    },
+    {
+     "name": "CETV2",
+     "urls": [
+      "http://ottrrs.hl.chinamobile.com/PLTV/88888888/224/3221226425/index.m3u8"
+     ]
+    },
+    {
+     "name": "CETV4",
+     "urls": [
+      "http://ottrrs.hl.chinamobile.com/PLTV/88888888/224/3221225783/index.m3u8",
+      "http://39.134.67.108/PLTV/88888888/224/3221225750/1.m3u8"
+     ]
+    },
+    {
+     "name": "CGTN英语",
+     "urls": [
+      "http://ottrrs.hl.chinamobile.com/PLTV/88888888/224/3221225604/index.m3u8",
+      "http://39.134.67.108/PLTV/88888888/224/3221225510/1.m3u8"
+     ]
+    },
+    {
+     "name": "CGTN西语",
+     "urls": [
+      "http://ottrrs.hl.chinamobile.com/PLTV/88888888/224/3221226431/index.m3u8",
+      "https://livees.cgtn.com/1000e/prog_index.m3u8"
+     ]
+    },
+    {
+     "name": "CGTN俄语",
+     "urls": [
+      "http://ottrrs.hl.chinamobile.com/PLTV/88888888/224/3221226543/index.m3u8",
+      "https://liveru.cgtn.com/1000r/prog_index.m3u8"
+     ]
+    },
+    {
+     "name": "CGTN法语",
+     "urls": [
+      "http://ottrrs.hl.chinamobile.com/PLTV/88888888/224/3221226520/index.m3u8",
+      "https://livefr.cgtn.com/1000f/prog_index.m3u8"
+     ]
+    },
+    {
+     "name": "CGTN阿语",
+     "urls": [
+      "http://ottrrs.hl.chinamobile.com/PLTV/88888888/224/3221226517/index.m3u8",
+      "https://livear.cgtn.com/1000a/prog_index.m3u8"
+     ]
+    },
+    {
+     "name": "CGTN纪录",
+     "urls": [
+      "http://ottrrs.hl.chinamobile.com/PLTV/88888888/224/3221225602/index.m3u8",
+      "https://livedoc.cgtn.com/500d/prog_index.m3u8",
+      "http://39.134.67.108/PLTV/88888888/224/3221225509/1.m3u8"
+     ]
+    }
+   ]
+  },
+  {
+   "group": "卫视",
+   "channels": [
+    {
+     "name": "北京卫视",
+     "urls": [
+      "http://ottrrs.hl.chinamobile.com/PLTV/88888888/224/3221225728/index.m3u8",
+      "http://ottrrs.hl.chinamobile.com/PLTV/88888888/224/3221226450/index.m3u8",
+      "http://39.134.67.108/PLTV/88888888/224/3221225931/1.m3u8",
+      "http://39.134.65.179/PLTV/88888888/224/3221225678/1.m3u8",
+      "http://39.134.65.173/PLTV/88888888/224/3221225678/1.m3u8"
+     ]
+    },
+    {
+     "name": "天津卫视",
+     "urls": [
+      "http://ottrrs.hl.chinamobile.com/PLTV/88888888/224/3221225740/index.m3u8",
+      "http://ottrrs.hl.chinamobile.com/PLTV/88888888/224/3221226459/index.m3u8",
+      "http://39.134.67.108/PLTV/88888888/224/3221225972/1.m3u8"
+     ]
+    },
+    {
+     "name": "东南卫视",
+     "urls": [
+      "http://ottrrs.hl.chinamobile.com/PLTV/88888888/224/3221226341/index.m3u8",
+      "http://ottrrs.hl.chinamobile.com/PLTV/88888888/224/3221225620/index.m3u8",
+      "http://39.134.67.108/PLTV/88888888/224/3221225950/1.m3u8"
+     ]
+    },
+    {
+     "name": "东方卫视",
+     "urls": [
+      "http://ottrrs.hl.chinamobile.com/PLTV/88888888/224/3221225735/index.m3u8",
+      "http://ottrrs.hl.chinamobile.com/PLTV/88888888/224/3221226345/index.m3u8",
+      "http://39.134.67.108/PLTV/88888888/224/3221225942/1.m3u8",
+      "http://39.134.65.179/PLTV/88888888/224/3221225672/1.m3u8",
+      "http://39.134.65.173/PLTV/88888888/224/3221225672/1.m3u8",
+      "http://39.134.65.175/PLTV/88888888/224/3221225672/1.m3u8"
+     ]
+    },
+    {
+     "name": "江苏卫视",
+     "urls": [
+      "http://ottrrs.hl.chinamobile.com/PLTV/88888888/224/3221225613/index.m3u8",
+      "http://ottrrs.hl.chinamobile.com/PLTV/88888888/224/3221226310/index.m3u8",
+      "http://39.134.67.108/PLTV/88888888/224/3221225938/1.m3u8",
+      "http://39.134.65.175/PLTV/88888888/224/3221225503/1.m3u8",
+      "http://39.134.65.181/PLTV/88888888/224/3221225503/1.m3u8",
+      "http://39.134.65.183/PLTV/88888888/224/3221225503/1.m3u8",
+      "http://39.134.65.173/PLTV/88888888/224/3221225503/1.m3u8"
+     ]
+    },
+    {
+     "name": "浙江卫视",
+     "urls": [
+      "http://ottrrs.hl.chinamobile.com/PLTV/88888888/224/3221225612/index.m3u8",
+      "http://ottrrs.hl.chinamobile.com/PLTV/88888888/224/3221226339/index.m3u8",
+      "http://39.134.67.108/PLTV/88888888/224/3221225959/1.m3u8",
+      "http://39.134.65.162/PLTV/88888888/224/3221225514/1.m3u8",
+      "http://39.134.65.175/PLTV/88888888/224/3221225514/1.m3u8",
+      "http://39.134.65.179/PLTV/88888888/224/3221225514/1.m3u8",
+      "http://39.134.65.173/PLTV/88888888/224/3221225514/1.m3u8"
+     ]
+    },
+    {
+     "name": "安徽卫视",
+     "urls": [
+      "http://ottrrs.hl.chinamobile.com/PLTV/88888888/224/3221226391/index.m3u8",
+      "http://39.134.67.108/PLTV/88888888/224/3221225925/1.m3u8"
+     ]
+    },
+    {
+     "name": "河北卫视",
+     "urls": [
+      "http://ottrrs.hl.chinamobile.com/PLTV/88888888/224/3221226406/index.m3u8",
+      "http://39.134.67.108/PLTV/88888888/224/3221225961/1.m3u8"
+     ]
+    },
+    {
+     "name": "河南卫视",
+     "urls": [
+      "http://ottrrs.hl.chinamobile.com/PLTV/88888888/224/3221226480/index.m3u8"
+     ]
+    },
+    {
+     "name": "广东卫视",
+     "urls": [
+      "http://ottrrs.hl.chinamobile.com/PLTV/88888888/224/3221226248/index.m3u8",
+      "http://39.134.67.108/PLTV/88888888/224/3221225966/1.m3u8"
+     ]
+    },
+    {
+     "name": "深圳卫视",
+     "urls": [
+      "http://ottrrs.hl.chinamobile.com/PLTV/88888888/224/3221225739/index.m3u8",
+      "http://ottrrs.hl.chinamobile.com/PLTV/88888888/224/3221226313/index.m3u8",
+      "http://39.134.67.108/PLTV/88888888/224/3221225943/1.m3u8"
+     ]
+    },
+    {
+     "name": "湖北卫视",
+     "urls": [
+      "http://ottrrs.hl.chinamobile.com/PLTV/88888888/224/3221225627/index.m3u8",
+      "http://ottrrs.hl.chinamobile.com/PLTV/88888888/224/3221226477/index.m3u8",
+      "http://39.134.67.108/PLTV/88888888/224/3221225975/1.m3u8",
+      "http://39.134.65.162/PLTV/88888888/224/3221225569/1.m3u8"
+     ]
+    },
+    {
+     "name": "香港卫视",
+     "urls": [
+      "http://zhibo.hkstv.tv/livestream/mutfysrq/playlist.m3u8"
+     ]
+    },
+    {
+     "name": "湖南卫视",
+     "urls": [
+      "http://ottrrs.hl.chinamobile.com/PLTV/88888888/224/3221225610/index.m3u8",
+      "http://ottrrs.hl.chinamobile.com/PLTV/88888888/224/3221226307/index.m3u8",
+      "http://39.134.65.181/PLTV/88888888/224/3221225506/1.m3u8",
+      "http://39.134.65.173/PLTV/88888888/224/3221225506/1.m3u8",
+      "http://39.134.65.183/PLTV/88888888/224/3221225506/1.m3u8",
+      "http://39.134.65.175/PLTV/88888888/224/3221225506/1.m3u8"
+     ]
+    },
+    {
+     "name": "四川卫视",
+     "urls": [
+      "http://ottrrs.hl.chinamobile.com/PLTV/88888888/224/3221226338/index.m3u8",
+      "http://39.134.67.108/PLTV/88888888/224/3221225970/1.m3u8"
+     ]
+    },
+    {
+     "name": "重庆卫视",
+     "urls": [
+      "http://ottrrs.hl.chinamobile.com/PLTV/88888888/224/3221226409/index.m3u8",
+      "http://ottrrs.hl.chinamobile.com/PLTV/88888888/224/3221225618/index.m3u8",
+      "http://39.134.67.108/PLTV/88888888/224/3221225963/1.m3u8"
+     ]
+    },
+    {
+     "name": "江西卫视",
+     "urls": [
+      "http://ottrrs.hl.chinamobile.com/PLTV/88888888/224/3221226344/index.m3u8",
+      "http://39.134.67.108/PLTV/88888888/224/3221225935/1.m3u8"
+     ]
+    },
+    {
+     "name": "山西卫视",
+     "urls": [
+      "http://liveflash.sxrtv.com/live/sxwshd.m3u8?sub_m3u8=true&edge_slice=true",
+      "http://39.134.67.108/PLTV/88888888/224/3221226009/1.m3u8"
+     ]
+    },
+    {
+     "name": "山东卫视",
+     "urls": [
+      "http://ottrrs.hl.chinamobile.com/PLTV/88888888/224/3221226456/index.m3u8",
+      "http://39.134.67.108/PLTV/88888888/224/3221225952/1.m3u8",
+      "http://39.134.65.141/PLTV/88888888/224/3221225952/1.m3u8"
+     ]
+    },
+    {
+     "name": "贵州卫视",
+     "urls": [
+      "http://ottrrs.hl.chinamobile.com/PLTV/88888888/224/3221226474/index.m3u8",
+      "http://39.134.67.108/PLTV/88888888/224/3221225974/1.m3u8",
+      "http://39.134.65.149/PLTV/88888888/224/3221225974/1.m3u8"
+     ]
+    },
+    {
+     "name": "海南卫视",
+     "urls": [
+      "http://ottrrs.hl.chinamobile.com/PLTV/88888888/224/3221226465/index.m3u8",
+      "http://39.134.67.108/PLTV/88888888/224/3221226026/1.m3u8"
+     ]
+    },
+    {
+     "name": "宁夏卫视",
+     "urls": [
+      "http://ottrrs.hl.chinamobile.com/PLTV/88888888/224/3221225632/index.m3u8",
+      "http://ottrrs.hl.chinamobile.com/PLTV/88888888/224/3221226454/index.m3u8"
+     ]
+    },
+    {
+     "name": "陕西卫视",
+     "urls": [
+      "http://ottrrs.hl.chinamobile.com/PLTV/88888888/224/3221226457/index.m3u8"
+     ]
+    },
+    {
+     "name": "吉林卫视",
+     "urls": [
+      "http://ottrrs.hl.chinamobile.com/PLTV/88888888/224/3221226397/index.m3u8",
+      "http://39.134.67.108/PLTV/88888888/224/3221226013/1.m3u8"
+     ]
+    },
+    {
+     "name": "辽宁卫视",
+     "urls": [
+      "http://ottrrs.hl.chinamobile.com/PLTV/88888888/224/3221226546/index.m3u8",
+      "http://ottrrs.hl.chinamobile.com/PLTV/88888888/224/3221225619/index.m3u8"
+     ]
+    },
+    {
+     "name": "西藏卫视",
+     "urls": [
+      "http://ottrrs.hl.chinamobile.com/PLTV/88888888/224/3221225638/index.m3u8",
+      "http://ottrrs.hl.chinamobile.com/PLTV/88888888/224/3221226433/index.m3u8",
+      "http://39.134.67.108/PLTV/88888888/224/3221225951/1.m3u8"
+     ]
+    },
+    {
+     "name": "内蒙古卫视",
+     "urls": [
+      "http://ottrrs.hl.chinamobile.com/PLTV/88888888/224/3221225634/index.m3u8",
+      "http://ottrrs.hl.chinamobile.com/PLTV/88888888/224/3221226389/index.m3u8"
+     ]
+    },
+    {
+     "name": "黑龙江卫视",
+     "urls": [
+      "http://ottrrs.hl.chinamobile.com/PLTV/88888888/224/3221226327/index.m3u8",
+      "http://ottrrs.hl.chinamobile.com/PLTV/88888888/224/3221226467/index.m3u8",
+      "http://ottrrs.hl.chinamobile.com/PLTV/88888888/224/3221226419/index.m3u8",
+      "http://ottrrs.hl.chinamobile.com/PLTV/88888888/224/3221226582/index.m3u8",
+      "http://ottrrs.hl.chinamobile.com/PLTV/88888888/224/3221226585/index.m3u8",
+      "http://ottrrs.hl.chinamobile.com/PLTV/88888888/224/3221226532/index.m3u8",
+      "http://ottrrs.hl.chinamobile.com/PLTV/88888888/224/3221226531/index.m3u8",
+      "http://ottrrs.hl.chinamobile.com/PLTV/88888888/224/3221226525/index.m3u8",
+      "http://39.134.67.108/PLTV/88888888/224/3221225994/1.m3u8"
+     ]
+    },
+    {
+     "name": "广西卫视",
+     "urls": [
+      "http://ottrrs.hl.chinamobile.com/PLTV/88888888/224/3221226549/index.m3u8",
+      "http://39.134.67.108/PLTV/88888888/224/3221226024/1.m3u8"
+     ]
+    }
+   ]
+  },
+  {
+   "group": "精品",
+   "channels": [
+    {
+     "name": "黑莓电影",
+     "urls": [
+      "http://ottrrs.hl.chinamobile.com/PLTV/88888888/224/3221225743/index.m3u8"
+     ]
+    },
+    {
+     "name": "黑莓动画",
+     "urls": [
+      "http://ottrrs.hl.chinamobile.com/PLTV/88888888/224/3221225662/index.m3u8"
+     ]
+    },
+    {
+     "name": "纪实人文",
+     "urls": [
+      "http://ottrrs.hl.chinamobile.com/PLTV/88888888/224/3221225738/index.m3u8"
+     ]
+    },
+    {
+     "name": "超级电视剧",
+     "urls": [
+      "http://ottrrs.hl.chinamobile.com/PLTV/88888888/224/3221225716/index.m3u8"
+     ]
+    },
+    {
+     "name": "超级电影",
+     "urls": [
+      "http://ottrrs.hl.chinamobile.com/PLTV/88888888/224/3221225717/index.m3u8"
+     ]
+    },
+    {
+     "name": "哒啵赛事",
+     "urls": [
+      "http://ottrrs.hl.chinamobile.com/PLTV/88888888/224/3221225675/index.m3u8"
+     ]
+    },
+    {
+     "name": "金牌综艺",
+     "urls": [
+      "http://ottrrs.hl.chinamobile.com/PLTV/88888888/224/3221225666/index.m3u8"
+     ]
+    },
+    {
+     "name": "精品体育",
+     "urls": [
+      "http://ottrrs.hl.chinamobile.com/PLTV/88888888/224/3221225674/index.m3u8"
+     ]
+    },
+    {
+     "name": "咪咕体育",
+     "urls": [
+      "http://ottrrs.hl.chinamobile.com/PLTV/88888888/224/3221226398/index.m3u8"
+     ]
+    },
+    {
+     "name": "爱情喜剧",
+     "urls": [
+      "http://ottrrs.hl.chinamobile.com/PLTV/88888888/224/3221225669/index.m3u8"
+     ]
+    },
+    {
+     "name": "精品萌宠",
+     "urls": [
+      "http://ottrrs.hl.chinamobile.com/PLTV/88888888/224/3221226505/index.m3u8"
+     ]
+    },
+    {
+     "name": "睛彩竞技",
+     "urls": [
+      "http://ottrrs.hl.chinamobile.com/PLTV/88888888/224/3221226472/index.m3u8",
+      "http://ottrrs.hl.chinamobile.com/PLTV/88888888/224/3221226124/index.m3u8",
+      "http://39.134.67.108/PLTV/88888888/224/3221225897/1.m3u8"
+     ]
+    },
+    {
+     "name": "睛彩篮球",
+     "urls": [
+      "http://ottrrs.hl.chinamobile.com/PLTV/88888888/224/3221226469/index.m3u8",
+      "http://ottrrs.hl.chinamobile.com/PLTV/88888888/224/3221226147/index.m3u8",
+      "http://39.134.67.108/PLTV/88888888/224/3221225895/1.m3u8"
+     ]
+    },
+    {
+     "name": "睛彩青少",
+     "urls": [
+      "http://ottrrs.hl.chinamobile.com/PLTV/88888888/224/3221226508/index.m3u8"
+     ]
+    },
+    {
+     "name": "卡酷少儿",
+     "urls": [
+      "http://ottrrs.hl.chinamobile.com/PLTV/88888888/224/3221225654/index.m3u8",
+      "http://39.134.67.108/PLTV/88888888/224/3221225562/1.m3u8"
+     ]
+    },
+    {
+     "name": "金鹰卡通",
+     "urls": [
+      "http://ottrrs.hl.chinamobile.com/PLTV/88888888/224/3221225653/index.m3u8"
+     ]
+    },
+    {
+     "name": "优漫卡通",
+     "urls": [
+      "http://ottrrs.hl.chinamobile.com/PLTV/88888888/224/3221225656/index.m3u8"
+     ]
+    },
+    {
+     "name": "哈哈炫动",
+     "urls": [
+      "http://ottrrs.hl.chinamobile.com/PLTV/88888888/224/3221225657/index.m3u8"
+     ]
+    },
+    {
+     "name": "超级体育",
+     "urls": [
+      "http://ottrrs.hl.chinamobile.com/PLTV/88888888/224/3221225715/index.m3u8"
+     ]
+    },
+    {
+     "name": "超级综艺",
+     "urls": [
+      "http://ottrrs.hl.chinamobile.com/PLTV/88888888/224/3221225714/index.m3u8"
+     ]
+    },
+    {
+     "name": "潮妈辣婆",
+     "urls": [
+      "http://ottrrs.hl.chinamobile.com/PLTV/88888888/224/3221225685/index.m3u8"
+     ]
+    },
+    {
+     "name": "东北热剧",
+     "urls": [
+      "http://ottrrs.hl.chinamobile.com/PLTV/88888888/224/3221225741/index.m3u8"
+     ]
+    },
+    {
+     "name": "动作电影",
+     "urls": [
+      "http://ottrrs.hl.chinamobile.com/PLTV/88888888/224/3221225661/index.m3u8"
+     ]
+    },
+    {
+     "name": "古装剧场",
+     "urls": [
+      "http://ottrrs.hl.chinamobile.com/PLTV/88888888/224/3221225663/index.m3u8"
+     ]
+    },
+    {
+     "name": "海外剧场",
+     "urls": [
+      "http://ottrrs.hl.chinamobile.com/PLTV/88888888/224/3221225671/index.m3u8"
+     ]
+    },
+    {
+     "name": "欢乐剧场",
+     "urls": [
+      "http://ottrrs.hl.chinamobile.com/PLTV/88888888/224/3221225742/index.m3u8"
+     ]
+    },
+    {
+     "name": "家庭剧场",
+     "urls": [
+      "http://ottrrs.hl.chinamobile.com/PLTV/88888888/224/3221225677/index.m3u8"
+     ]
+    },
+    {
+     "name": "惊悚悬疑",
+     "urls": [
+      "http://ottrrs.hl.chinamobile.com/PLTV/88888888/224/3221225665/index.m3u8"
+     ]
+    },
+    {
+     "name": "精品大剧",
+     "urls": [
+      "http://ottrrs.hl.chinamobile.com/PLTV/88888888/224/3221225670/index.m3u8"
+     ]
+    },
+    {
+     "name": "精品纪录",
+     "urls": [
+      "http://ottrrs.hl.chinamobile.com/PLTV/88888888/224/3221225672/index.m3u8"
+     ]
+    },
+    {
+     "name": "军旅剧场",
+     "urls": [
+      "http://ottrrs.hl.chinamobile.com/PLTV/88888888/224/3221225676/index.m3u8"
+     ]
+    },
+    {
+     "name": "军事评论",
+     "urls": [
+      "http://ottrrs.hl.chinamobile.com/PLTV/88888888/224/3221225668/index.m3u8"
+     ]
+    },
+    {
+     "name": "明星大片",
+     "urls": [
+      "http://ottrrs.hl.chinamobile.com/PLTV/88888888/224/3221225664/index.m3u8"
+     ]
+    },
+    {
+     "name": "农业致富",
+     "urls": [
+      "http://ottrrs.hl.chinamobile.com/PLTV/88888888/224/3221225683/index.m3u8"
+     ]
+    },
+    {
+     "name": "武搏世界",
+     "urls": [
+      "http://ottrrs.hl.chinamobile.com/PLTV/88888888/224/3221225680/index.m3u8"
+     ]
+    },
+    {
+     "name": "炫舞未来",
+     "urls": [
+      "http://ottrrs.hl.chinamobile.com/PLTV/88888888/224/3221225719/index.m3u8"
+     ]
+    },
+    {
+     "name": "怡伴健康",
+     "urls": [
+      "http://ottrrs.hl.chinamobile.com/PLTV/88888888/224/3221225673/index.m3u8"
+     ]
+    },
+    {
+     "name": "中国功夫",
+     "urls": [
+      "http://ottrrs.hl.chinamobile.com/PLTV/88888888/224/3221225681/index.m3u8"
+     ]
+    },
+    {
+     "name": "纪实科教",
+     "urls": [
+      "http://ottrrs.hl.chinamobile.com/PLTV/88888888/224/3221225729/index.m3u8"
+     ]
+    },
+    {
+     "name": "足球频道",
+     "urls": [
+      "https://nmglive.imfc.cn/5n1r1c/182396.m3u8"
      ]
     }
    ]
@@ -3512,7 +4198,7 @@
  "header": {},
  "wallpaper": "",
  "rules": [],
- "_generated_at": "2026-10-25 09:33:20 UTC",
+ "_generated_at": "2026-10-25 09:48:44 UTC",
  "_generator": "build_config.py",
  "_site_count": 426
 }
