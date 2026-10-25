@@ -1,15 +1,6 @@
 {
  "sites": [
   {
-   "key": "Real360",
-   "name": "360资源",
-   "type": 1,
-   "api": "https://360zy.com/api.php/provide/vod",
-   "searchable": 1,
-   "quickSearch": 1,
-   "filterable": 1
-  },
-  {
    "key": "建安采集",
    "name": "影视 • 建安",
    "type": 1,
@@ -173,6 +164,36 @@
    "name": "影视 • 率率[直连]",
    "type": 1,
    "api": "https://suoniapi.com/api.php/provide/vod/?ac=list"
+  },
+  {
+   "key": "Real360",
+   "name": "360资源",
+   "type": 1,
+   "api": "https://360zy.com/api.php/provide/vod",
+   "searchable": 1,
+   "quickSearch": 1,
+   "filterable": 1
+  },
+  {
+   "key": "火狐",
+   "name": "🦊火狐采集",
+   "type": 1,
+   "api": "https://hhzyapi.com/api.php/provide/vod/"
+  },
+  {
+   "key": "jinYing",
+   "name": "金鹰",
+   "type": 1,
+   "api": "https://jyzyapi.com/provide/vod/from/jinyingyun/at/json",
+   "searchable": 1,
+   "quickSearch": 1,
+   "filterable": 1
+  },
+  {
+   "key": "极速资源",
+   "name": "影视 • 极速[直连]",
+   "type": 1,
+   "api": "https://jszyapi.com/api.php/provide/vod/?ac=list"
   },
   {
    "key": "yuanhsing",
@@ -3502,7 +3523,7 @@
  "header": {},
  "wallpaper": "",
  "rules": [],
- "_generated_at": "2026-10-25 08:50:43 UTC",
+ "_generated_at": "2026-10-25 08:57:56 UTC",
  "_generator": "build_config.py",
- "_site_count": 423
+ "_site_count": 426
 }

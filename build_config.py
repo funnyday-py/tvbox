@@ -227,6 +227,14 @@ def build():
         except Exception:
             checks = {}
 
+        def is_ethics(s):
+            """带伦理/福利分类的源 -> 沉底（TVBoxOSC 无分类隐藏，只能调排序）"""
+            r = checks.get(s.get("key"))
+            if not r:
+                return False
+            names = [c.get("name", "") for c in (r.get("good") or []) + (r.get("empty") or [])]
+            return any(("伦理" in n or "福利" in n) for n in names)
+
         def health(s):
             r = checks.get(s.get("key"))
             if not r:
@@ -236,7 +244,9 @@ def build():
 
         t1 = [s for s in cfg["sites"] if str(s.get("type")) == "1"]
         others = [s for s in cfg["sites"] if str(s.get("type")) != "1"]
-        t1.sort(key=health, reverse=True)
+        # 沉底：伦理源排最后（组内仍按健康度降序）
+        t1.sort(key=lambda s: (1 if is_ethics(s) else 0,
+                               -health(s)[0], -health(s)[1]))
         cfg["sites"] = t1 + others
         if t1:
             print("首页默认源: %s（%d 个有效分类）"
