@@ -1,6 +1,15 @@
 {
  "sites": [
   {
+   "key": "Real360",
+   "name": "360资源",
+   "type": 1,
+   "api": "https://360zy.com/api.php/provide/vod",
+   "searchable": 1,
+   "quickSearch": 1,
+   "filterable": 1
+  },
+  {
    "key": "建安采集",
    "name": "影视 • 建安",
    "type": 1,
@@ -4189,7 +4198,7 @@
  "header": {},
  "wallpaper": "",
  "rules": [],
- "_generated_at": "2026-10-25 05:44:21 UTC",
+ "_generated_at": "2026-10-25 06:56:16 UTC",
  "_generator": "build_config.py",
- "_site_count": 425
+ "_site_count": 426
 }
