@@ -26,14 +26,10 @@ jobs:
       - name: Install deps
         run: pip install requests
 
-      - name: Refresh live list & spider jar
+      - name: Refresh spider jar
         run: |
           set -e
           mkdir -p deploy
-          BASE="https://raw.githubusercontent.com/gaotianliuyun/gao/master"
-          # 直播源
-          curl -fsSL --retry 3 --max-time 90 "$BASE/list.txt" -o deploy/live.txt \
-            || echo "WARN: live.txt 下载失败，沿用仓库内旧文件"
           # spider jar（用 GitHub API raw，避开 CDN 对 jar 的 403）
           curl -fsSL --retry 3 --max-time 90 \
             -H "Accept: application/vnd.github.raw" \
@@ -41,6 +37,9 @@ jobs:
             -o deploy/spider.jar \
             || echo "WARN: spider.jar 下载失败，沿用仓库内旧文件"
           ls -lh deploy/
+
+      - name: Refresh live sources (m3u 合并)
+        run: python merge_lives.py || echo "WARN: live 合并失败，沿用仓库内旧文件"
 
       - name: Harvest new sources from active repos
         run: |
