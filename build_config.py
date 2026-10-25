@@ -192,18 +192,36 @@ def build():
     cfg["spider"] = build_spider()
     print("spider: %s" % (cfg["spider"][:90] or "(空)"))
 
-    # 2) lives —— 内联频道（本 App 分支原生支持 loadLives 直解析，无网络依赖）。
-    #    实测教训：频道过多(192/2101)进直播页必崩；只保留 3 组小集先保通路。
+    # 2) lives —— 全量内联（崩溃根因是 TVBoxOSC 的 bug，FongMi 内核无此问题）
     groups = parse_live_txt(LIVE_TXT)
-    keep = ("CCTV", "卫视", "精品")
-    inline = [g for g in groups if g["group"] in keep]
-    if inline:
-        cfg["lives"] = inline
-        total = sum(len(g["channels"]) for g in inline)
-        print("lives: 内联 %d 组 / %d 频道 (%s)" % (len(inline), total, "/".join(g["group"] for g in inline)))
+    if groups:
+        cfg["lives"] = groups
+        total = sum(len(g["channels"]) for g in groups)
+        print("lives: 内联 %d 组 / %d 频道" % (len(groups), total))
     else:
         cfg["lives"] = build_lives_redirect()
         print("lives: proxy 重定向兜底")
+
+    # 2.5) 伦理分类隐藏（FongMi 支持 site 级 categories 白名单）
+    #      对带伦理/福利分类的源：只白名单其余分类；无检测数据的源不动
+    n_filtered = 0
+    check_path = os.path.join(DEPLOY, "vod_check.json")
+    if os.path.exists(check_path):
+        try:
+            checks_all = {r["key"]: r for r in json.load(open(check_path, encoding="utf-8"))}
+        except Exception:
+            checks_all = {}
+        for s in cfg.get("sites", []):
+            r = checks_all.get(s.get("key"))
+            if not r:
+                continue
+            names = [c.get("name", "") for c in (r.get("good") or []) + (r.get("empty") or [])]
+            eth = [n for n in names if ("伦理" in n or "福利" in n)]
+            clean = [n for n in names if n and ("伦理" not in n and "福利" not in n)]
+            if eth and clean:
+                s["categories"] = clean
+                n_filtered += 1
+    print("伦理分类白名单过滤: %d 个源" % n_filtered)
 
     # 3) jsdelivr 镜像
     n_fixed = 0
