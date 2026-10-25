@@ -16,12 +16,6 @@
    "filterable": 1
   },
   {
-   "key": "TV-茅台资源",
-   "name": "茅台采集",
-   "type": 1,
-   "api": "https://caiji.maotaizy.cc/api.php/provide/vod/"
-  },
-  {
    "key": "FeiFAN",
    "name": "非凡",
    "type": 1,
@@ -113,7 +107,7 @@
   },
   {
    "key": "New5168",
-   "name": "百度",
+   "name": "bdzy资源",
    "type": 1,
    "api": "https://api.apibdzy.com/api.php/provide/vod?ac=list",
    "searchable": 1,
@@ -136,12 +130,6 @@
    "api": "https://jszyapi.com/api.php/provide/vod/?ac=list"
   },
   {
-   "key": "金鹰资源",
-   "name": "金鹰资源",
-   "type": 1,
-   "api": "https://jyzyapi.com/provide/vod/"
-  },
-  {
    "key": "GuangSU",
    "name": "光速",
    "type": 1,
@@ -149,12 +137,6 @@
    "searchable": 1,
    "quickSearch": 1,
    "filterable": 1
-  },
-  {
-   "key": "光速资源",
-   "name": "光速资源",
-   "type": 1,
-   "api": "https://api.guangsuapi.com/api.php/provide/vod/"
   },
   {
    "key": "量子资源",
@@ -190,26 +172,8 @@
    "filterable": 1
   },
   {
-   "key": "量子",
-   "name": "影视 • 量子[直连]",
-   "type": 1,
-   "api": "https://cj.lziapi.com/api.php/provide/vod/"
-  },
-  {
    "key": "率率",
    "name": "影视 • 率率[直连]",
-   "type": 1,
-   "api": "https://suoniapi.com/api.php/provide/vod/?ac=list"
-  },
-  {
-   "key": "红牛资源",
-   "name": "红牛资源",
-   "type": 1,
-   "api": "https://www.hongniuzy2.com/api.php/provide/vod/"
-  },
-  {
-   "key": "csp_SNzy",
-   "name": "🐉┃索尼┃高清",
    "type": 1,
    "api": "https://suoniapi.com/api.php/provide/vod/?ac=list"
   },
@@ -4216,7 +4180,7 @@
  "header": {},
  "wallpaper": "",
  "rules": [],
- "_generated_at": "2026-10-25 05:34:33 UTC",
+ "_generated_at": "2026-10-25 05:36:50 UTC",
  "_generator": "build_config.py",
- "_site_count": 430
+ "_site_count": 424
 }

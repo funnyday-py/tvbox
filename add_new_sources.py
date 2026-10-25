@@ -39,9 +39,18 @@ def main():
     mine = json.load(open(os.path.join(BASE, "tvbox_config.json"), encoding="utf-8"))
     checks = json.load(open(os.path.join(DEPLOY, "vod_check.json"), encoding="utf-8"))
 
+    # 关键词黑名单（与 _clean_kw.py 同步）：垃圾源直接跳过，不进实测
+    BAD = ["初中", "小学", "音乐", "听书", "小说", "相声", "评书", "戏曲", "有声",
+           "美女", "歌曲", "广播", "少儿", "幼儿", "高中", "中医", "球队", "歌手",
+           "女团", "音悦", "健身", "斗鱼", "网盘", "云盘", "虎牙", "直播", "Live",
+           "企鹅", "看球", "抓饭", "夸克", "阿里"]
+
     my_keys = {s.get("key") for s in mine["sites"]}
     added, results = [], []
     for c in cands:
+        if any(b in str(c["name"]) for b in BAD):
+            print("× %-14s 命中黑名单，跳过" % c["name"])
+            continue
         api = str(c["api"]).rstrip("/")
         base = api.split("?")[0]
         # 1) 拉内容

@@ -42,6 +42,11 @@ jobs:
             || echo "WARN: spider.jar 下载失败，沿用仓库内旧文件"
           ls -lh deploy/
 
+      - name: Harvest new sources from active repos
+        run: |
+          python harvest_new_sources.py || true
+          python add_new_sources.py || true
+
       - name: Probe VOD sources (drop dead ones)
         run: |
           python probe_vod.py > deploy/_probe.txt 2>&1 || true
