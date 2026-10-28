@@ -46,7 +46,8 @@ jobs:
           ls -lh deploy/
 
       - name: Refresh live sources (m3u 合并)
-        run: python merge_lives.py || echo "WARN: live 合并失败，沿用仓库内旧文件"
+        run: |
+          python merge_lives.py || echo "WARN: live merge failed, keep old live.txt"
 
       - name: Harvest new sources from active repos
         run: |
