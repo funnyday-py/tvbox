@@ -49,11 +49,6 @@ jobs:
         run: |
           python merge_lives.py || echo "WARN: live merge failed, keep old live.txt"
 
-      - name: Harvest new sources from active repos
-        run: |
-          python harvest_new_sources.py || true
-          python add_new_sources.py || true
-
       - name: Probe VOD sources (drop dead ones)
         run: |
           python probe_vod.py > deploy/_probe.txt 2>&1 || true
