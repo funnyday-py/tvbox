@@ -19,6 +19,33 @@
    "filterable": 1
   },
   {
+   "key": "Real360",
+   "name": "360资源",
+   "type": 1,
+   "api": "http://192.168.2.201:9979/360",
+   "searchable": 1,
+   "quickSearch": 1,
+   "filterable": 1
+  },
+  {
+   "key": "jinying2",
+   "name": "金鹰资源",
+   "type": 1,
+   "api": "http://192.168.2.201:9979/jinying2",
+   "searchable": 1,
+   "quickSearch": 1,
+   "filterable": 1
+  },
+  {
+   "key": "jisu",
+   "name": "极速资源",
+   "type": 1,
+   "api": "http://192.168.2.201:9979/jisu",
+   "searchable": 1,
+   "quickSearch": 1,
+   "filterable": 1
+  },
+  {
    "key": "建安采集",
    "name": "影视 • 建安",
    "type": 1,
@@ -1756,7 +1783,7 @@
  "header": {},
  "wallpaper": "",
  "rules": [],
- "_generated_at": "2026-10-30 23:42:46 UTC",
+ "_generated_at": "2026-10-31 03:16:43 UTC",
  "_generator": "build_config.py",
- "_site_count": 14
+ "_site_count": 17
 }

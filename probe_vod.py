@@ -30,6 +30,12 @@ def probe(site):
     if not api.startswith("http"):
         return {"name": site.get("name"), "key": site.get("key"),
                 "ok": False, "reason": "非http源"}
+    # 局域网中转源（ethics_filter_proxy）：GitHub runner 不可达，不能据此判死；
+    # 其可用性由本机中转层的过滤与重试保证，标记 ok 保留
+    if api.startswith("http://192.168."):
+        return {"name": site.get("name"), "key": site.get("key"),
+                "ok": True, "lan_proxy": True, "videos": 0, "classes": 0,
+                "ms": 0, "reason": "局域网中转源，跳过探测"}
     url = api + "?ac=videolist"
     t0 = time.time()
     try:
