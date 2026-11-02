@@ -137,6 +137,57 @@
    "searchable": 1,
    "quickSearch": 1,
    "filterable": 1
+  },
+  {
+   "key": "csp_Bili",
+   "name": "哔哩合集",
+   "type": 3,
+   "api": "csp_Bili",
+   "searchable": 1,
+   "quickSearch": 1,
+   "playerType": 2
+  },
+  {
+   "key": "csp_Dm84",
+   "name": "动漫巴士",
+   "type": 3,
+   "api": "csp_Dm84",
+   "searchable": 1,
+   "quickSearch": 1,
+   "playerType": 2,
+   "ext": "https://dm84.net"
+  },
+  {
+   "key": "csp_FirstAid",
+   "name": "急救教学",
+   "type": 3,
+   "api": "csp_FirstAid",
+   "searchable": 0,
+   "quickSearch": 0
+  },
+  {
+   "key": "csp_Kugou",
+   "name": "酷狗音乐",
+   "type": 3,
+   "api": "csp_Kugou",
+   "searchable": 0,
+   "quickSearch": 0,
+   "playerType": 2,
+   "ext": {
+    "classes": [
+     {
+      "type_name": "酷狗",
+      "type_id": "kugou"
+     }
+    ]
+   }
+  },
+  {
+   "key": "csp_Douban",
+   "name": "豆瓣推荐",
+   "type": 3,
+   "api": "csp_Douban",
+   "searchable": 0
   }
  ],
  "lives": [
@@ -1783,7 +1834,7 @@
  "header": {},
  "wallpaper": "",
  "rules": [],
- "_generated_at": "2026-10-31 03:16:43 UTC",
+ "_generated_at": "2026-11-02 06:05:53 UTC",
  "_generator": "build_config.py",
- "_site_count": 17
+ "_site_count": 22
 }
