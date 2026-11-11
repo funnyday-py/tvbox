@@ -54,6 +54,9 @@ jobs:
           python probe_vod.py > deploy/_probe.txt 2>&1 || true
           tail -40 deploy/_probe.txt
 
+      - name: Check VOD classes (health report)
+        run: python check_vod_classes.py
+
       - name: Build config
         run: python build_config.py --check
 
