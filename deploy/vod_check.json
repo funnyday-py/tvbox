@@ -3,7 +3,7 @@
   "key": "New5327",
   "name": "创享影视",
   "ok": true,
-  "ms": 15151,
+  "ms": 19439,
   "class_total": 9,
   "good": [
    {
@@ -29,7 +29,7 @@
    {
     "id": 26,
     "name": "综艺",
-    "total": 2865
+    "total": 2866
    },
    {
     "id": 31,
@@ -59,7 +59,7 @@
   "key": "建安采集",
   "name": "影视 • 建安",
   "ok": true,
-  "ms": 5062,
+  "ms": 5378,
   "class_total": 21,
   "good": [
    {
@@ -70,12 +70,12 @@
    {
     "id": 3,
     "name": "综艺",
-    "total": 9192
+    "total": 9194
    },
    {
     "id": 4,
     "name": "动漫",
-    "total": 15832
+    "total": 15844
    },
    {
     "id": 6,
@@ -120,15 +120,70 @@
  {
   "key": "MaoTai",
   "name": "茅台采集",
-  "ok": false,
-  "reason": "分类接口失败: ConnectionError",
-  "ms": 2122
+  "ok": true,
+  "ms": 10369,
+  "class_total": 54,
+  "good": [
+   {
+    "id": 2,
+    "name": "连续剧",
+    "total": 34
+   },
+   {
+    "id": 3,
+    "name": "综艺片",
+    "total": 38
+   },
+   {
+    "id": 4,
+    "name": "动漫",
+    "total": 48
+   },
+   {
+    "id": 5,
+    "name": "纪录片",
+    "total": 5852
+   },
+   {
+    "id": 6,
+    "name": "动作片",
+    "total": 6871
+   },
+   {
+    "id": 7,
+    "name": "爱情片",
+    "total": 3467
+   },
+   {
+    "id": 8,
+    "name": "喜剧片",
+    "total": 8739
+   },
+   {
+    "id": 9,
+    "name": "科幻片",
+    "total": 1572
+   },
+   {
+    "id": 10,
+    "name": "恐怖片",
+    "total": 4305
+   }
+  ],
+  "empty": [
+   {
+    "id": 1,
+    "name": "电影",
+    "total": 4
+   }
+  ],
+  "reason": ""
  },
  {
   "key": "非凡资源",
   "name": "非凡资源",
   "ok": true,
-  "ms": 5180,
+  "ms": 4972,
   "class_total": 31,
   "good": [
    {
@@ -139,7 +194,7 @@
    {
     "id": 6,
     "name": "动作片",
-    "total": 4585
+    "total": 4587
    },
    {
     "id": 7,
@@ -159,12 +214,12 @@
    {
     "id": 10,
     "name": "恐怖片",
-    "total": 5158
+    "total": 5164
    },
    {
     "id": 11,
     "name": "剧情片",
-    "total": 19904
+    "total": 19906
    }
   ],
   "empty": [
@@ -190,13 +245,13 @@
   "key": "天涯采集",
   "name": "影视 • 天涯",
   "ok": true,
-  "ms": 2314,
+  "ms": 2209,
   "class_total": 39,
   "good": [
    {
     "id": 6,
     "name": "动作片",
-    "total": 5065
+    "total": 5066
    },
    {
     "id": 7,
@@ -216,12 +271,12 @@
    {
     "id": 10,
     "name": "恐怖片",
-    "total": 4751
+    "total": 4753
    },
    {
     "id": 11,
     "name": "剧情片",
-    "total": 22925
+    "total": 22926
    }
   ],
   "empty": [
@@ -252,7 +307,7 @@
   "key": "LinagZi",
   "name": "量子资源",
   "ok": true,
-  "ms": 7732,
+  "ms": 8623,
   "class_total": 40,
   "good": [
    {
@@ -314,38 +369,38 @@
   "key": "HER",
   "name": "黑木耳",
   "ok": true,
-  "ms": 3180,
+  "ms": 4112,
   "class_total": 62,
   "good": [
    {
     "id": "5",
     "name": "动作片",
-    "total": 5221
+    "total": 5223
    },
    {
     "id": "6",
     "name": "喜剧片",
-    "total": 6605
+    "total": 6606
    },
    {
     "id": "7",
     "name": "爱情片",
-    "total": 3200
+    "total": 3201
    },
    {
     "id": "8",
     "name": "科幻片",
-    "total": 1163
+    "total": 1164
    },
    {
     "id": "9",
     "name": "恐怖片",
-    "total": 3854
+    "total": 3859
    },
    {
     "id": "10",
     "name": "剧情片",
-    "total": 14879
+    "total": 14883
    }
   ],
   "empty": [
@@ -376,7 +431,7 @@
   "key": "电影天堂",
   "name": "影视 • 电影天堂",
   "ok": true,
-  "ms": 1447,
+  "ms": 2399,
   "class_total": 32,
   "good": [
    {
@@ -407,7 +462,7 @@
    {
     "id": 11,
     "name": "剧情片",
-    "total": 8763
+    "total": 8764
    }
   ],
   "empty": [
@@ -438,23 +493,23 @@
   "key": "HongNiu",
   "name": "红牛资源",
   "ok": true,
-  "ms": 1941,
+  "ms": 3048,
   "class_total": 44,
   "good": [
    {
     "id": 5,
     "name": "动作片",
-    "total": 5313
+    "total": 5314
    },
    {
     "id": 6,
     "name": "喜剧片",
-    "total": 5836
+    "total": 5837
    },
    {
     "id": 7,
     "name": "爱情片",
-    "total": 2674
+    "total": 2675
    },
    {
     "id": 8,
@@ -464,12 +519,12 @@
    {
     "id": 9,
     "name": "恐怖片",
-    "total": 3794
+    "total": 3795
    },
    {
     "id": 10,
     "name": "剧情片",
-    "total": 16125
+    "total": 16127
    }
   ],
   "empty": [
@@ -499,70 +554,15 @@
  {
   "key": "MD",
   "name": "魔都",
-  "ok": true,
-  "ms": 2275,
-  "class_total": 42,
-  "good": [
-   {
-    "id": 1,
-    "name": "国产动漫",
-    "total": 2618
-   },
-   {
-    "id": 2,
-    "name": "日韩动漫",
-    "total": 4531
-   },
-   {
-    "id": 3,
-    "name": "欧美动漫",
-    "total": 627
-   },
-   {
-    "id": 4,
-    "name": "港台动漫",
-    "total": 35
-   },
-   {
-    "id": 5,
-    "name": "动漫电影",
-    "total": 2128
-   },
-   {
-    "id": 6,
-    "name": "里番动漫",
-    "total": 1717
-   },
-   {
-    "id": 10,
-    "name": "动作片",
-    "total": 3091
-   }
-  ],
-  "empty": [
-   {
-    "id": 7,
-    "name": "电影",
-    "total": 2
-   },
-   {
-    "id": 8,
-    "name": "连续剧",
-    "total": 0
-   },
-   {
-    "id": 9,
-    "name": "综艺",
-    "total": 1
-   }
-  ],
-  "reason": ""
+  "ok": false,
+  "reason": "分类接口失败: ReadTimeout",
+  "ms": 61591
  },
  {
   "key": "暴风",
   "name": "暴风",
   "ok": true,
-  "ms": 3656,
+  "ms": 6577,
   "class_total": 49,
   "good": [
    {
@@ -573,7 +573,7 @@
    {
     "id": 21,
     "name": "动作片",
-    "total": 5141
+    "total": 5143
    },
    {
     "id": 22,
@@ -583,7 +583,7 @@
    {
     "id": 23,
     "name": "恐怖片",
-    "total": 4647
+    "total": 4649
    },
    {
     "id": 24,
@@ -593,12 +593,12 @@
    {
     "id": 25,
     "name": "爱情片",
-    "total": 2194
+    "total": 2196
    },
    {
     "id": 26,
     "name": "剧情片",
-    "total": 18914
+    "total": 18917
    },
    {
     "id": 27,
@@ -624,29 +624,29 @@
   "name": "bdzy资源",
   "ok": false,
   "reason": "分类接口失败: HTTP 403",
-  "ms": 1682
+  "ms": 1754
  },
  {
   "key": "GuangSU",
   "name": "光速",
   "ok": true,
-  "ms": 1679,
+  "ms": 2653,
   "class_total": 44,
   "good": [
    {
     "id": 6,
     "name": "动作片",
-    "total": 5347
+    "total": 5348
    },
    {
     "id": 7,
     "name": "喜剧片",
-    "total": 1987
+    "total": 1988
    },
    {
     "id": 8,
     "name": "爱情片",
-    "total": 2705
+    "total": 2706
    },
    {
     "id": 9,
@@ -656,12 +656,12 @@
    {
     "id": 10,
     "name": "剧情片",
-    "total": 20284
+    "total": 20286
    },
    {
     "id": 11,
     "name": "恐怖片",
-    "total": 3839
+    "total": 3840
    }
   ],
   "empty": [
@@ -691,84 +691,29 @@
  {
   "key": "KuaiChe",
   "name": "快车资源",
-  "ok": true,
-  "ms": 2231,
-  "class_total": 59,
-  "good": [
-   {
-    "id": 6,
-    "name": "动作片",
-    "total": 5111
-   },
-   {
-    "id": 7,
-    "name": "喜剧片",
-    "total": 8086
-   },
-   {
-    "id": 8,
-    "name": "爱情片",
-    "total": 1248
-   },
-   {
-    "id": 9,
-    "name": "科幻片",
-    "total": 1178
-   },
-   {
-    "id": 10,
-    "name": "恐怖片",
-    "total": 4545
-   },
-   {
-    "id": 11,
-    "name": "剧情片",
-    "total": 22789
-   }
-  ],
-  "empty": [
-   {
-    "id": 1,
-    "name": "电影",
-    "total": 0
-   },
-   {
-    "id": 2,
-    "name": "电视剧",
-    "total": 0
-   },
-   {
-    "id": 3,
-    "name": "综艺",
-    "total": 0
-   },
-   {
-    "id": 4,
-    "name": "动漫",
-    "total": 0
-   }
-  ],
-  "reason": ""
+  "ok": false,
+  "reason": "分类接口失败: ReadTimeout",
+  "ms": 61531
  },
  {
   "key": "Real360",
   "name": "360资源",
   "ok": false,
   "reason": "分类接口失败: ConnectTimeout",
-  "ms": 61256
+  "ms": 61254
  },
  {
   "key": "jinying2",
   "name": "金鹰资源",
   "ok": false,
   "reason": "分类接口失败: ConnectTimeout",
-  "ms": 61265
+  "ms": 61256
  },
  {
   "key": "jisu",
   "name": "极速资源",
   "ok": false,
   "reason": "分类接口失败: ConnectTimeout",
-  "ms": 61259
+  "ms": 61265
  }
 ]
