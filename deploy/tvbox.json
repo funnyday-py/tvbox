@@ -73,6 +73,24 @@
    "api": "http://cj.ffzyapi.com/api.php/provide/vod/"
   },
   {
+   "key": "MD",
+   "name": "魔都",
+   "type": 1,
+   "api": "https://www.mdzyapi.com/api.php/provide/vod/?ac=list",
+   "searchable": 1,
+   "quickSearch": 1,
+   "filterable": 1
+  },
+  {
+   "key": "KuaiChe",
+   "name": "快车资源",
+   "type": 1,
+   "api": "https://caiji.kuaichezy.org/api.php/provide/vod/?ac=list",
+   "searchable": 1,
+   "quickSearch": 1,
+   "filterable": 1
+  },
+  {
    "key": "天涯采集",
    "name": "影视 • 天涯",
    "type": 1,
@@ -1816,7 +1834,7 @@
  "header": {},
  "wallpaper": "",
  "rules": [],
- "_generated_at": "2026-11-12 01:54:34 UTC",
+ "_generated_at": "2026-11-13 01:03:12 UTC",
  "_generator": "build_config.py",
- "_site_count": 20
+ "_site_count": 22
 }
