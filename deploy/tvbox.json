@@ -73,6 +73,15 @@
    "filterable": 1
   },
   {
+   "key": "KuaiChe",
+   "name": "快车资源",
+   "type": 1,
+   "api": "https://caiji.kuaichezy.org/api.php/provide/vod/?ac=list",
+   "searchable": 1,
+   "quickSearch": 1,
+   "filterable": 1
+  },
+  {
    "key": "天涯采集",
    "name": "影视 • 天涯",
    "type": 1,
@@ -1825,7 +1834,7 @@
  "header": {},
  "wallpaper": "",
  "rules": [],
- "_generated_at": "2026-11-14 00:53:01 UTC",
+ "_generated_at": "2026-11-14 23:53:35 UTC",
  "_generator": "build_config.py",
- "_site_count": 21
+ "_site_count": 22
 }
