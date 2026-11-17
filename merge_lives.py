@@ -35,6 +35,20 @@ MAX_PER_SOURCE = 150   # 单来源（虎牙/斗鱼）最多频道数
 DROP_GROUPS = {"列表更新时间"}  # YY 测试文件的垃圾组
 FALLBACK_TXT = "https://gh-proxy.com/https://raw.githubusercontent.com/gaotianliuyun/gao/master/list.txt"
 
+# LibreTV 公开 M3U 增量源（组名, 地址）。每源封顶 50 频道，避免老电视端直播页 OOM。
+LIBRETV_CAP = 50
+LIBRETV_M3U = [
+    ("LibreTV·国内电视", "https://iptv-org.github.io/iptv/countries/cn.m3u"),
+    ("LibreTV·港澳台海外", "https://raw.githubusercontent.com/YueChan/Live/main/GNTV.m3u"),
+    ("LibreTV·全球体育", "https://iptv-org.github.io/iptv/categories/sports.m3u"),
+    ("LibreTV·全球新闻", "https://iptv-org.github.io/iptv/categories/news.m3u"),
+    ("LibreTV·全球电影", "https://iptv-org.github.io/iptv/categories/movies.m3u"),
+    ("LibreTV·优质精选", "https://raw.githubusercontent.com/Free-TV/IPTV/master/playlist.m3u8"),
+    ("LibreTV·香港频道", "https://iptv-org.github.io/iptv/countries/hk.m3u"),
+    ("LibreTV·全球IPTV", "https://iptv-org.github.io/iptv/index.m3u"),
+    ("LibreTV·俄罗斯台", "https://gh-proxy.com/https://raw.githubusercontent.com/iptv-org/iptv/master/streams/ru.m3u"),
+]
+
 
 def get(u, tries=2):
     for i in range(tries):
@@ -53,6 +67,20 @@ def get(u, tries=2):
         time.sleep(1)
     print("[warn] 放弃 %s" % u)
     return None
+
+
+def get_lite(u):
+    """增量源专用：单次短超时，失败即跳过，不拖慢每日构建。"""
+    try:
+        op = urllib.request.build_opener(
+            urllib.request.ProxyHandler({}),
+            urllib.request.HTTPSHandler(context=CTX),
+        )
+        req = urllib.request.Request(u, headers={"User-Agent": "okhttp/4.9.1"})
+        return op.open(req, timeout=10).read().decode("utf-8", "ignore")
+    except Exception as e:
+        print("[warn] LibreTV 增量源跳过: %s" % str(e)[:60])
+        return None
 
 
 def m3u_to_groups(body, default_group):
@@ -122,6 +150,31 @@ def main():
                 if not raw.endswith("#genre#"):
                     n_fb += 1
     stat.append(("旧·央卫视(垫底)", n_fb))
+
+    # LibreTV 增量：每日拉取公开 M3U 并限流，任一源失败只跳过该源。
+    n_ltv = 0
+    for tag, url in LIBRETV_M3U:
+        body = get_lite(url)
+        if not body:
+            continue
+        groups, order = m3u_to_groups(body, tag)
+        chan = []
+        for g in order:
+            for cname, u in groups[g]:
+                if u in seen or not cname or "," in cname:
+                    continue
+                seen.add(u)
+                chan.append((cname, u))
+                if len(chan) >= LIBRETV_CAP:
+                    break
+            if len(chan) >= LIBRETV_CAP:
+                break
+        if chan:
+            out.append("%s,#genre#" % tag)
+            for cname, u in chan:
+                out.append("%s,%s" % (cname, u))
+            n_ltv += len(chan)
+    stat.append(("LibreTV·增量", n_ltv))
 
     os.makedirs(os.path.dirname(OUT), exist_ok=True)
     open(OUT, "w", encoding="utf-8").write("\n".join(out) + "\n")
