@@ -539,6 +539,7 @@ LibreTV·全球新闻,#genre#
 30A Lionel Nation,https://30a-tv.com/ln.m3u8
 92 News HD (720p),http://92news.vdn.dstreamone.net/92newshd/92hd/playlist.m3u8
 99TV (720p),https://cdn.pishow.tv/ott/live/1211/master.m3u8
+101tv Malaga (720p) [Geo-blocked],https://liveingesta318.cdnmedia.tv/101televisionlive/smil:malagaott.smil/playlist.m3u8
 360 (720p) [Not 24/7],https://turkmedya-live.ercdn.net/tv360/tv360.m3u8
 360° News (1080p),https://edge-tv-ll.facecast.io/evacoder_hls_hi/UBZfFgtKB1JwTwoDERNQVGGs/index.m3u8
 365 News,https://cdn4.mjunoon.tv:8087/streamtest/140M/chunks.m3u8
@@ -553,7 +554,8 @@ Aaj Tak (720p),https://d1rc86nwwc9fag.cloudfront.net/vglive-sk-791258/master.m3u
 Aaj Tak HD (1080p),https://feeds.intoday.in/aajtak/api/aajtakhd/master.m3u8
 Abante TV (1080p),https://amg19223-amg19223c12-amgplt0352.playout.now3.amagi.tv/playlist/amg19223-amg19223c12-amgplt0352/playlist.m3u8
 Abb Takk (576p),http://115.42.65.142:9981/stream/channelid/852828604
-ABC News (720p),https://abc-news-dmd-streams-1.akamaized.net/out/v1/701126012d044971b3fa89406a440133/index.m3u8
+ABC News (Australia) (720p),https://abc-news-dmd-streams-1.akamaized.net/out/v1/701126012d044971b3fa89406a440133/index.m3u8
+ABC News (India) (1080p),https://stream.ottlive.co.in/abcnews/index.m3u8
 ABC News Live 1 (720p),https://abcnews-streams.akamaized.net/hls/live/2023560/abcnewshudson1/master.m3u8
 ABC News Live 2 (720p),https://abcnews-streams.akamaized.net/hls/live/2023561/abcnewshudson2/master.m3u8
 ABC News Live 3 (720p),https://abcnews-streams.akamaized.net/hls/live/2023562/abcnewshudson3/master.m3u8
@@ -567,8 +569,6 @@ ABC News Live 10 (720p),https://abcnews-streams.akamaized.net/hls/live/2023569/a
 ABC News Live (720p),https://jmp2.uk/plu-6508be683a0d700008c534e4.m3u8
 ABC-TV Paraguay,http://45.184.109.10/live/69393EAE6ADBC65A68F942022362A202/7.m3u8
 ABN Andhra Jyoti (1080p),https://stream.ottlive.co.in/abnandhrajyothycdn/index.m3u8
-ABN News (1080p),http://115.42.65.142:9981/stream/channelid/966869781
-ABP Ananda (1080p),https://d2l4ar6y3mrs4k.cloudfront.net/live-streaming/ananda-livetv/master.m3u8
 LibreTV·全球电影,#genre#
 00s Replay,https://jmp2.uk/plu-62ba60f059624e000781c436.m3u8
 4ever Cinema (1080p),http://stream.mcquack.net/258/index.m3u8
