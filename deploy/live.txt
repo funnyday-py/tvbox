@@ -758,7 +758,6 @@ LibreTV·俄罗斯台,#genre#
 365 days TV (576p),http://stream.mcquack.net/70/index.m3u8
 365 days TV (576p),https://fs.uplink.kz/365_dney/mono.m3u8?token=onlinetv
 365 days TV (576p),https://stream8.cinerama.uz/1242/tracks-v1a1/mono.m3u8
-.black (576p),http://s1.merlive.am/black/index.m3u8
 .black (576p),http://stream.mcquack.net/263/index.m3u8
 .red (576p),http://5.188.159.128:8070/RED/index.m3u8
 .red (576p),http://stream.mcquack.net/69/index.m3u8
@@ -792,3 +791,4 @@ Bober (576p),http://88.212.15.50/live/test_bober/playlist.m3u8
 Bober (576p),https://fs.uplink.kz/bober/mono.m3u8?token=onlinetv
 Boks TV (576p),http://s7.merlive.am/BoxTV/index.m3u8
 Boks TV (576p),http://stream.mcquack.net/154/index.m3u8
+BRIDGE (576p),http://178.134.1.158:8081/BRIDGE/index.m3u8
